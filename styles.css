@@ -40,10 +40,10 @@ html {
 	z-index: 100;
   position: absolute;
   color: white;
-  font-size: 24px;
+  font-size: 4em;
   font-weight: bold;
   
-  top: 70%;
+  top: 30%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
