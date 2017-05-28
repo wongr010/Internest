@@ -1,0 +1,52 @@
+
+.bodyparagraph {
+	font-size: 16px;
+	background-color: #7FDBFF;
+	font-family: 'Nunito';
+	padding: 2em;
+}
+
+.title{
+	padding-top: 20px;
+	font-size: 80px;
+	margin-bottom: 0px;
+}
+
+.navbarspacing{
+	font-size: 80px;
+	margin: 5px;
+	padding: 5px;
+}
+
+.logo-size{
+	width: 30%;
+	height: 100%;
+}
+
+
+html { 
+  background: url(biztop.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.no-squish{
+	padding: 0px;
+}
+
+#slogan{
+	z-index: 100;
+  position: absolute;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  
+  top: 70%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+  text-align: center;
+ 
+}
