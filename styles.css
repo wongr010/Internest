@@ -20,7 +20,8 @@
 
 .logo-size{
 	width: 30%;
-	height: 100%;
+	height: 70%;
+	float: left;
 }
 
 
@@ -50,6 +51,7 @@ html {
   text-align: center;
   display: block;
   padding-bottom: 10%;
+  column-span: all;
  
 }
 
@@ -60,4 +62,12 @@ html {
 	padding-top: 15%;
 	text-align: center;
 	column-width: 50%;
+}
+
+..navbar-height{
+	height: 40px;
+}
+.log-in-btn{
+	
+	line-height: 20px;
 }
