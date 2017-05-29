@@ -12,11 +12,7 @@
 	margin-bottom: 0px;
 }
 
-.navbarspacing{
-	font-size: 80px;
-	margin: 5px;
-	padding: 5px;
-}
+
 
 .logo-size{
 	width: 30%;
@@ -57,7 +53,7 @@ html {
 }
 
 .Employers-info{
-	z-index: 100;
+	z-index: 80;
 	position: absolute;
 	top: 20%;
 	color: white;
@@ -74,21 +70,29 @@ html {
 }
 
 .employer-intro{
-	float: left;
+	
 	width: 50%;
 	padding: 5em;
-}
-
-
-.navbar-height{
-	height: 40px;
-}
-.log-in-btn{
-	
-	vertical-align: text-bottom;
 }
 
 .sign-up{
 	background-color: #00BFFF;
 
 }
+
+.menu-button-manip{
+	z-index: 100;
+}
+
+@media only screen and (max-width : 480px) {
+		.employer-intro{
+			width: 100%;
+		}
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+    	.employer-intro{
+    		width: 100%;
+    	}
+    }
