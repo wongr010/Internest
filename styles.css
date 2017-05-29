@@ -16,7 +16,7 @@
 
 .logo-size{
 	width: 160px;
-	height: 40px;
+	height: 35px;
 	float: left;
 }
 
@@ -34,28 +34,33 @@ html {
 	padding: 0px;
 }
 
+.reference-elem{
+
+	position: relative;
+}
+
 #slogan{
 	z-index: 80;
-  position: absolute;
-  color: white;
-  font-size: 4em;
-  font-weight: bold;
-  top: 40%;
+	position: absolute;
+	color: white;
+	font-size: 4em;
+	font-weight: bold;
+	
   
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-  text-align: center;
-  display: block;
-  padding-bottom: 10%;
-  column-span: all;
+  	text-align: center;
+  	display: block;
+  	padding-bottom: 10%;
+  	column-span: all;
  
 }
 
 .Employers-info{
 	z-index: 100;
 	position: absolute;
-	top: 20%;
+	top: 15em;
 	color: white;
 	margin: auto;
 	display: block;
@@ -73,6 +78,7 @@ html {
 	z-index: 1000;
 	width: 50%;
 	padding: 5em;
+	top: 5em;
 }
 
 .sign-up{
