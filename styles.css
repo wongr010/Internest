@@ -88,6 +88,7 @@ html {
 
 .menu-button-manip{
 	z-index: 50000;
+	position: relative;
 }
 
 h3{
