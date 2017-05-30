@@ -6,6 +6,8 @@
 	padding: 2em;
 }
 
+
+
 .title{
 	padding-top: 20px;
 	font-size: 80px;
@@ -41,7 +43,7 @@ html {
 #slogan{
 	z-index: 80;
 	position: absolute;
-	color: white;
+	color: #D98310; /*gold*/
 	font-size: 4em;
 	font-weight: bold;
 	
@@ -60,7 +62,7 @@ html {
 	z-index: 100;
 	position: absolute;
 	top: 15em;
-	color: white;
+	color: #D98310;
 	margin: auto;
 	display: block;
 	padding-top: 15%;
@@ -81,13 +83,21 @@ html {
 }
 
 .sign-up{
-	background-color: #00BFFF;
+	background-color: #328CC1;
+	color: #1D2731;
+	font-weight: bold;
 
 }
 
 .menu-button-manip{
 	z-index: 50000;
 	position: relative;
+}
+
+.log-in-style{
+	background-color: #00315D; /*Prussian blue*/
+	color: white;
+	font-weight: bold;
 }
 
 h3{

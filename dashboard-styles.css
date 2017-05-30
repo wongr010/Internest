@@ -4,7 +4,48 @@
 	float: left;
 }
 
+.log-in-style{
+	background-color: #00315D;
+	color: white;
+	font-weight: bold;
+}
+
 .tabbar-format{
-	padding-top: 2em;
-	background-color: #AFEEEE;
+	padding-left: 1em;
+	padding-top: 1em;
+	border-width: 1px;
+	border-color: #328CC1;
+	color: #00315D;
+}
+
+body{
+	background-color: #1D2731;
+}
+
+.welcome{
+	padding: 2em;
+}
+
+.profile-box{
+	background-color: #B0C4DE;
+	padding: 0px;
+}
+
+.profile-header{
+	font-weight: bold;
+	background-color: #00315D;
+	margin-top: 0px;
+	padding: 1%;
+	width: 100%;
+	color: #D98310;
+
+}
+
+#profile-content{
+	padding: 1%;
+}
+
+.welcome-msg{
+	font-weight: bold;
+	color: #D98310;
 }
