@@ -79,7 +79,12 @@ html {
 	z-index: 1000;
 	width: 50%;
 	padding: 5em;
-	top: 12em;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	
+	
+	color: #031424;
+	
 }
 
 .sign-up{
@@ -89,9 +94,19 @@ html {
 
 }
 
+.intro-wrapper{
+	width: 100%;
+	position: relative;
+	top: 19em;
+	background-color: rgba(176, 196, 222, 0.5);
+	margin-bottom: 12em;
+	float: left;
+}
+
 .menu-button-manip{
 	z-index: 50000;
 	position: relative;
+
 }
 
 .log-in-style{
