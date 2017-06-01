@@ -42,8 +42,9 @@ html {
 
 #slogan{
 	z-index: 80;
-	position: absolute;
-	color: #D98310; /*gold*/
+	position: relative;
+
+	color: #EAE3EA;
 	font-size: 4em;
 	font-weight: bold;
 	
@@ -58,7 +59,7 @@ html {
  
 }
 
-.Employers-info{
+#Employers-info{
 	z-index: 100;
 	position: absolute;
 	top: 15em;

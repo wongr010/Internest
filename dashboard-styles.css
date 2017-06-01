@@ -39,7 +39,7 @@ body{
 	margin-top: 0px;
 	padding: 2%;
 	width: 100%;
-	color: #D98310;
+	color: #EAE3EA;
 	border-radius: 25px 25px 0px 0px;
 
 
@@ -47,11 +47,11 @@ body{
 
 #profile-content{
 	padding: 2%;
-	background-color: rgba(50, 140, 193, 0.3);
+
 }
 
 .welcome-msg{
 	font-weight: bold;
-	color: #D98310;
+	color: #EAE3EA;;
 
 }
