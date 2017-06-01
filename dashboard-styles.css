@@ -56,11 +56,12 @@ body{
 
 .welcome-msg{
 	font-weight: bold;
-	color: #EAE3EA;;
+	color: #EAE3EA;
+
 
 }
 
-.edit-button{
+#edit-button{
 	background-color: #328CC1;
 	border-color: #328CC1;
 }

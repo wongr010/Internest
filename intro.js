@@ -27,12 +27,18 @@ function Translatedown()
             menuexpanded=false;
 
             return;
-            
-            
 
 			}, 20);
         }
+    
+       }
 
-            
-           
-        }
+function EditHighlight(){ //color 'edit' button light blue when hovered over- student dashboard
+
+	document.getElementById("edit-button").style.backgroundColor = "#B0C4DE";
+
+}
+
+function UnEditHighlight(){ //return 'edit' button to OG color after mouse leaves
+	document.getElementById("edit-button").style.backgroundColor = "#328CC1";
+}
