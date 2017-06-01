@@ -4,6 +4,10 @@
 	float: left;
 }
 
+.no-squish{
+	padding: 0px;
+}
+
 .log-in-style{
 	background-color: #00315D;
 	color: white;
@@ -54,4 +58,9 @@ body{
 	font-weight: bold;
 	color: #EAE3EA;;
 
+}
+
+.edit-button{
+	background-color: #328CC1;
+	border-color: #328CC1;
 }
