@@ -39,8 +39,21 @@ tr{
 	background-color: #EAE3EA;
 }
 
-#interview-table{
-	margin-left: 1em;
-	margin-right: 1em;
+.nav-style{
+	background-color: #EAE3EA;
+	color: black;
+
 }
 
+header{
+	width: 100%;
+}
+
+.header-style{
+	color: #EAE3EA;
+	margin-top: 3em;
+}
+
+.interview-content{
+	width: 100%;
+}

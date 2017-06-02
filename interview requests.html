@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href = "css/bootstrap.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Nunito: 400, 300' rel='stylesheet' type='text/css'>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		 <script src = "intro.js"></script>
+	<script src = "intro.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<!--<script src="intro.js"></script>-->
 	
@@ -20,7 +20,7 @@
 
 	<header>
 
-		<nav class="navbar navbar-default reference-elem">
+		<nav class="navbar navbar-default">
 			<div class="container-fluid">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
@@ -55,8 +55,10 @@
 				</div>
 			</div>
 
+
+
 			
-			<ul class="nav nav-tabs  tabbar-format">
+			<ul class="nav nav-tabs nav-justified nav-style">
 				<li role="Profile"><a href="#">Profile</a></li>
 				<li role="Job Recommendations"><a href="#">Job Recommendations</a></li>
 				<li role="Interview Requests" class="active"><a href="#">Inteview Requests</a></li>
@@ -73,43 +75,84 @@
 		
 
 
-</header>
+	</header>
 
-<div id="interview-table">
+	<div class="interview-content">
+		<h2 class="header-style">Interview Requests</h2>
+
+		<div>
 			<table class="table table-striped request-chart">
-			<thead>
-				<tr>
-					<th>Position</th>
-					<th>Company</th>
-					<th>Scheduling Deadline</th>
-					<th>Doodle link</th>
-				</tr>
+				<thead>
+					<tr>
+						<th>Position</th>
+						<th>Company</th>
+						<th>Scheduling Deadline</th>
+						<th>Doodle link</th>
+					</tr>
 
 
-			</thead>
-			<tbody>
-				<tr>
-					<th scope="row">Pharmacy Assistant</th>
-					<td>Apotex</td>
-					<td>06/02/2017</td>
-					<td><a href="doodle.com"> doodle.com</a></td>
-				</tr>
-				<tr>
-					<th scope="row">Video Game QA Tester</th>
-					<td>Ubisoft</td>
-					<td>06/02/2017</td>
-					<td><a href="doodle.com"> doodle.com</td>
-				</tr>
-				<tr>
-					<th scope="row">Treasury Services Intern</th>
-					<td>RBC</td>
-					<td>06/02/2017</td>
-					<td><a href="doodle.com"> doodle.com</td>
-				</tr>
-			</tbody>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">Pharmacy Assistant</th>
+						<td>Apotex</td>
+						<td>06/02/2017</td>
+						<td><a href="doodle.com"> link</a></td>
+					</tr>
+					<tr>
+						<th scope="row">Video Game QA Tester</th>
+						<td>Ubisoft</td>
+						<td>06/02/2017</td>
+						<td><a href="doodle.com"> link</a></td>
+					</tr>
+					<tr>
+						<th scope="row">Treasury Services Intern</th>
+						<td>RBC</td>
+						<td>06/02/2017</td>
+						<td><a href="doodle.com"> link</a></td>
+					</tr>
+				</tbody>
 				
 			</table>
 		</div>
+
+		<h2 class="header-style">Confirmed Interviews</h2>
+
+		<div>
+			<table class="table table-striped request-chart">
+				<thead>
+					<tr>
+						<th>Position</th>
+						<th>Company</th>
+						<th>Confirmed date</th>
+					</tr>
+
+
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">Pharmacy Assistant</th>
+						<td>Apotex</td>
+						<td>06/02/2017</td>
+						
+					</tr>
+					<tr>
+						<th scope="row">Video Game QA Tester</th>
+						<td>Ubisoft</td>
+						<td>06/02/2017</td>
+						
+					</tr>
+					<tr>
+						<th scope="row">Treasury Services Intern</th>
+						<td>RBC</td>
+						<td>06/02/2017</td>
+						
+					</tr>
+				</tbody>
+				
+			</table>
+		</div>
+	</div>
 
 </body>
 </html>
