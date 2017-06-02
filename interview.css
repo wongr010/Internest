@@ -26,41 +26,6 @@ body{
 	background-color: #1D2731;
 }
 
-.welcome{
-	padding: 2em;
-}
-
-.profile-box{
-	background-color: #B0C4DE;
-	padding: 0px;
-	border-radius: 25px;
-	margin-top: 10px;
-}
-
-.profile-header{
-	font-weight: bold;
-	background-color: #00315D;
-	margin-top: 0px;
-	padding: 2%;
-	width: 100%;
-	color: #EAE3EA;
-	border-radius: 25px 25px 0px 0px;
-
-
-}
-
-#profile-content{
-	padding: 2%;
-
-}
-
-.welcome-msg{
-	font-weight: bold;
-	color: #EAE3EA;
-
-
-}
-
 #edit-button{
 	background-color: #328CC1;
 	border-color: #328CC1;
@@ -73,3 +38,9 @@ body{
 tr{
 	background-color: #EAE3EA;
 }
+
+#interview-table{
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
