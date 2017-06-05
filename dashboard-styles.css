@@ -34,7 +34,9 @@ body{
 	background-color: #B0C4DE;
 	padding: 0px;
 	border-radius: 25px;
+	width: 45%;
 	margin-top: 10px;
+	
 }
 
 .profile-header{
@@ -70,12 +72,39 @@ body{
 	color: black;
 }
 
-tr{
-	background-color: #EAE3EA;
-}
+
 
 .nav-style{
 	background-color: #EAE3EA;
 	color: black;
 
 }
+
+.result-box{
+	background-color: #B0C4DE;
+	padding: 0px;
+	border-radius: 25px;
+	width: 45%;
+	margin-top: 10px;
+	margin-left: 5%;
+}
+
+table{
+	margin: auto;
+}
+
+td{
+	padding: 5%;
+	font-weight: bold;
+}
+
+@media only screen and (max-width : 768px) {
+    	.result-box{
+    		width: 100%;
+    		margin-left: 0px;
+    	}
+
+    	.profile-box{
+    		width: 100%;
+    	}
+    }
