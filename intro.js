@@ -42,3 +42,22 @@ function EditHighlight(){ //color 'edit' button light blue when hovered over- st
 function UnEditHighlight(){ //return 'edit' button to OG color after mouse leaves
 	document.getElementById("edit-button").style.backgroundColor = "#328CC1";
 }
+
+function ExpandDescription(idno){
+	console.log("Hello");
+	
+	if (idno==1){
+	document.getElementById("describe1").innerHTML="Lorem ipsum dolor sit amet";
+						}
+
+
+	if (idno==2){
+	document.getElementById("describe2").innerHTML="Lorem ipsum dolor sit amet";
+						
+					}
+
+	if (idno==3){
+	document.getElementById("describe3").innerHTML="Lorem ipsum dolor sit amet";
+					}
+
+}
