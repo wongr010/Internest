@@ -1,5 +1,6 @@
 var menuexpanded=false; //intro page menu button
 var feedbackreportopen=false;
+var mobiledescribeopen=false;
 
 function Translatedown()
         {
@@ -44,24 +45,7 @@ function UnEditHighlight(){ //return 'edit' button to OG color after mouse leave
 	document.getElementById("edit-button").style.backgroundColor = "#328CC1";
 }
 
-function ExpandDescription(idno){
-	console.log("Hello");
-	
-	if (idno==1){
-	document.getElementById("describe1").innerHTML="Lorem ipsum dolor sit amet";
-						}
 
-
-	if (idno==2){
-	document.getElementById("describe2").innerHTML="Lorem ipsum dolor sit amet";
-						
-					}
-
-	if (idno==3){
-	document.getElementById("describe3").innerHTML="Lorem ipsum dolor sit amet";
-					}
-
-}
 
 function hiding(ID){ /*Expand and close feedback reports*/
 	if (!feedbackreportopen){
@@ -75,14 +59,20 @@ function hiding(ID){ /*Expand and close feedback reports*/
 	}
 }
 
-/*$(document).ready(function(){
-    $("#show-report1").click(function(){
-        $("#hidden-report1").toggle();
-    });
-});
+function mobileviewhide(ID, entryno){
+	
+	
 
-$(document).ready(function(){
-    $("#show-report2").click(function(){
-        $("#hidden-report2").toggle();
-    });
-});*/
+	if (!mobiledescribeopen){
+	document.getElementById("mobileexpand"+entryno).innerHTML = "Less";
+	 $("#"+ID).removeClass("hidden-xs");
+	 mobiledescribeopen=true;
+	}
+
+	else{
+		document.getElementById("mobileexpand"+entryno).innerHTML = "More";
+		$("#"+ID).addClass("hidden-xs");
+		mobiledescribeopen=false;
+	}
+}
+
