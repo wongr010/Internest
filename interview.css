@@ -1,3 +1,4 @@
+/* feedback reports, interview requests, job recommendations*/
 .logo-size{
 	width: 160px;
 	height: 35px;
@@ -56,6 +57,14 @@ header{
 
 .interview-content{
 	width: 100%;
+}
+
+.report{
+	color: white;
+}
+
+.hidden{
+	display: none;
 }
 
 

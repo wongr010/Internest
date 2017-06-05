@@ -1,4 +1,5 @@
 var menuexpanded=false; //intro page menu button
+var feedbackreportopen=false;
 
 function Translatedown()
         {
@@ -61,3 +62,27 @@ function ExpandDescription(idno){
 					}
 
 }
+
+function hiding(ID){ /*Expand and close feedback reports*/
+	if (!feedbackreportopen){
+	 $("#"+ID).removeClass("hidden");
+	 feedbackreportopen=true;
+	}
+
+	else{
+		$("#"+ID).addClass("hidden");
+		feedbackreportopen=false;
+	}
+}
+
+/*$(document).ready(function(){
+    $("#show-report1").click(function(){
+        $("#hidden-report1").toggle();
+    });
+});
+
+$(document).ready(function(){
+    $("#show-report2").click(function(){
+        $("#hidden-report2").toggle();
+    });
+});*/
