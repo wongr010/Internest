@@ -1,0 +1,84 @@
+/* feedback reports, interview requests, job recommendations*/
+.logo-size{
+	width: 160px;
+	height: 35px;
+	float: left;
+}
+
+.no-squish{
+	padding: 0px;
+}
+
+.log-in-style{
+	background-color: #00315D;
+	color: white;
+	font-weight: bold;
+}
+
+
+body{
+	background-color: #1D2731;
+}
+
+
+
+.nav-style{
+	background-color: #EAE3EA;
+	color: black;
+
+}
+
+header{
+	width: 100%;
+}
+
+.header-style{
+	color: #EAE3EA;
+	margin-top: 3em;
+}
+
+label{
+	color: black;
+}
+
+.login-section{
+	width: 90%;
+	margin-left: 4%;
+	margin-right: 4%;
+	text-align: left;
+
+}
+
+.input-login{
+	background-color: #B0C4DE;
+	
+	padding-bottom: 2%;
+	text-align: center;
+	border-radius: 10px;
+	width: 50%;
+	margin: auto;
+	margin-top: 10%;
+}
+
+.login-header{
+	font-weight: bold;
+	background-color: #00315D;
+	margin-top: 0px;
+	padding: 2%;
+	text-align: left;
+	color: #EAE3EA;
+	border-radius: 10px 10px 0px 0px;
+}
+
+.login-btn{
+	margin-left: 4%;
+	margin-right: 4%;
+
+}
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+    	.input-login{
+    		width: 95%;
+    	}
+    }
