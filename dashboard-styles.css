@@ -87,6 +87,8 @@ body{
 	width: 45%;
 	margin-top: 10px;
 	margin-left: 5%;
+	padding-bottom: 2%;
+	margin-bottom: 5%;
 }
 
 table{
@@ -96,6 +98,16 @@ table{
 td{
 	padding: 5%;
 	font-weight: bold;
+}
+
+.download-option{
+	text-align: center;
+	margin: 1%;
+}
+
+.download-report{
+	background-color: #328CC1;
+	
 }
 
 @media only screen and (max-width : 768px) {
