@@ -9,12 +9,13 @@
 	<link rel="stylesheet" href = "css/bootstrap.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Nunito: 400, 300' rel='stylesheet' type='text/css'>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src = "intro.js"></script>
+	<script src = "company.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<!--<script src="intro.js"></script>-->
 	
 
 	<link rel="stylesheet" href = "interview.css">
+	<link rel="stylesheet" href="matches.css">
 </head>
 <body>
 
@@ -60,11 +61,11 @@
 			
 			<ul class="nav nav-tabs nav-justified nav-style">
 				<li role="Profile"><a href="student dashboard.html">Profile</a></li>
-				<li role="Job Recommendations"><a href="jobrecommend.html">Job Recommendations</a></li>
-				<li role="Interview Requests" class="active"><a href="interview requests.html">Inteview Requests</a></li>
+				<li role="matches" class="active"><a href="jobrecommend.html">Candidate Matches</a></li>
+				<li role="Interview Requests"><a href="interview requests.html">Inteview Requests</a></li>
 
-				<li role="Feedback Reports"><a href="feedback reports.html"> Feedback Reports</a></li>
-				<li role="Past Submissions"><a href="past applications.html"> Past Applications</a></li>
+				<li role="New jobs"><a href="feedback reports.html"> Add New Jobs</a></li>
+				<li role="Uploaded jobs"><a href="past applications.html"> Uploaded Jobs</a></li>
 			</ul>
 
 
@@ -78,80 +79,70 @@
 	</header>
 
 	<div class="interview-content">
-		<h2 class="header-style">Interview Requests</h2>
+		<h2 class="header-style">Top Candidates</h2>
 
 		<div>
 			<table class="table table-striped request-chart">
 				<thead>
 					<tr>
-						<th>Position</th>
-						<th>Company</th>
-						<th>Scheduling Deadline</th>
-						<th>Doodle link</th>
+						<th></th>
+						<th>Name</th>
+						<th>C# proficiency</th>
+						<th>French proficiency</th>
+						<th>Meet?</th>
 					</tr>
 
 
 				</thead>
 				<tbody>
 					<tr>
-						<th scope="row">Pharmacy Assistant</th>
-						<td>Apotex</td>
-						<td>06/02/2017</td>
-						<td><a href="doodle.com"> link</a></td>
+						<th scope="row">1</th>
+						<td>James Bond</td>
+						<td>87%</td>
+						<td>87%</td>
+						<td><input type="checkbox" id="myCheck"></td>
 					</tr>
 					<tr>
-						<th scope="row">Video Game QA Tester</th>
-						<td>Ubisoft</td>
-						<td>06/02/2017</td>
-						<td><a href="doodle.com"> link</a></td>
+						<th scope="row">2</th>
+						<td>James Bond</td>
+						<td>87%</td>
+						<td>87%</td>
+						<td><input type="checkbox" id="myCheck"></td>
 					</tr>
 					<tr>
-						<th scope="row">Treasury Services Intern</th>
-						<td>RBC</td>
-						<td>06/02/2017</td>
-						<td><a href="doodle.com"> link</a></td>
+						<th scope="row">3</th>
+						<td>James Bond</td>
+						<td>87%</td>
+						<td>87%</td>
+						<td><input type="checkbox" id="myCheck"></td>
+					</tr>
+
+					<tr>
+						<th scope="row">4</th>
+						<td>James Bond</td>
+						<td>87%</td>
+						<td>87%</td>
+						<td><input type="checkbox" id="myCheck"></td>
+					</tr>
+
+					<tr>
+						<th scope="row">5</th>
+						<td>James Bond</td>
+						<td>87%</td>
+						<td>87%</td>
+						<td><input type="checkbox" id="myCheck"></td>
 					</tr>
 				</tbody>
 				
 			</table>
 		</div>
 
-		<h2 class="header-style">Confirmed Interviews</h2>
-
-		<div>
-			<table class="table table-striped request-chart">
-				<thead>
-					<tr>
-						<th>Position</th>
-						<th>Company</th>
-						<th>Confirmed date</th>
-					</tr>
-
-
-				</thead>
-				<tbody>
-					<tr>
-						<th scope="row">Pharmacy Assistant</th>
-						<td>Apotex</td>
-						<td>06/02/2017</td>
-						
-					</tr>
-					<tr>
-						<th scope="row">Video Game QA Tester</th>
-						<td>Ubisoft</td>
-						<td>06/02/2017</td>
-						
-					</tr>
-					<tr>
-						<th scope="row">Treasury Services Intern</th>
-						<td>RBC</td>
-						<td>06/02/2017</td>
-						
-					</tr>
-				</tbody>
-				
-			</table>
+		<div class="match-buttons">
+		<button class="btn btn-default">Schedule Interviews</button>
+		<button class="btn btn-default">View all Candidates</button>
 		</div>
+
+		
 	</div>
 
 </body>
