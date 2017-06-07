@@ -25,6 +25,10 @@ tr{
 
 }
 
+th{
+	text-align: center;
+}
+
 @media only screen and (max-width : 768px) {
     	.interview-table{
     		width: 100%;

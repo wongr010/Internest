@@ -20,3 +20,10 @@ function showcandidates(){
 	}
 
 }
+
+function interview_confirmed(){
+
+	alert("Interviews confirmed!");
+
+}
+
