@@ -82,7 +82,7 @@
 		<h2 class="header-style">Top Candidates</h2>
 
 		<div>
-			<table class="table table-striped request-chart">
+			<table class="table request-chart" id="all-rows">
 				<thead>
 					<tr>
 						<th></th>
@@ -132,6 +132,44 @@
 						<td>87%</td>
 						<td><input type="checkbox" id="myCheck"></td>
 					</tr>
+					</tbody>
+					<tbody class="hidden table-match" id="hidden-candidate">
+					<tr >
+						<th scope="row">6</th>
+						<td>James Bond</td>
+						<td>87%</td>
+						<td>87%</td>
+						<td><input type="checkbox" id="myCheck"></td>
+					</tr>
+					<tr>
+						<th scope="row">7</th>
+						<td>James Bond</td>
+						<td>87%</td>
+						<td>87%</td>
+						<td><input type="checkbox" id="myCheck"></td>
+					</tr>
+					<tr >
+						<th scope="row">8</th>
+						<td>James Bond</td>
+						<td>87%</td>
+						<td>87%</td>
+						<td><input type="checkbox" id="myCheck"></td>
+					</tr>
+					<tr >
+						<th scope="row">9</th>
+						<td>James Bond</td>
+						<td>87%</td>
+						<td>87%</td>
+						<td><input type="checkbox" id="myCheck"></td>
+					</tr>
+					<tr >
+						<th scope="row">10</th>
+						<td>James Bond</td>
+						<td>87%</td>
+						<td>87%</td>
+						<td><input type="checkbox" id="myCheck"></td>
+					</tr>
+					
 				</tbody>
 				
 			</table>
@@ -139,7 +177,7 @@
 
 		<div class="match-buttons">
 		<button class="btn btn-default">Schedule Interviews</button>
-		<button class="btn btn-default">View all Candidates</button>
+		<button class="btn btn-default" id="show-candidates" onclick="showcandidates()">View all Candidates</button>
 		</div>
 
 		

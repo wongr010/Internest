@@ -2,3 +2,14 @@
 	margin: auto;
 	text-align: center;
 }
+
+.hidden{
+	display: none;
+}
+
+tr{
+	background-color: #EFEFEF;
+}
+
+
+

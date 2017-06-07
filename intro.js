@@ -59,9 +59,7 @@ function hiding(ID){ /*Expand and close feedback reports*/
 	}
 }
 
-function mobileviewhide(ID, entryno){
-	
-	
+function mobileviewhide(ID, entryno){ //job recommendations
 
 	if (!mobiledescribeopen){
 	document.getElementById("mobileexpand"+entryno).innerHTML = "Less";
