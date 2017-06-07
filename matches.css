@@ -1,6 +1,7 @@
 .match-buttons{
 	margin: auto;
 	text-align: center;
+	margin-bottom: 2%;
 }
 
 .hidden{
@@ -10,6 +11,26 @@
 tr{
 	background-color: #EFEFEF;
 }
+
+.interview-table{
+	width: 75%;
+	margin: auto;
+	border-radius: 15px;
+	margin-bottom: 2%;
+	border-radius: 10px;
+}
+
+.interview-wrapper{
+	text-align: center;
+
+}
+
+@media only screen and (max-width : 768px) {
+    	.interview-table{
+    		width: 100%;
+    	}
+    }
+
 
 
 

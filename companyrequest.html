@@ -78,106 +78,89 @@
 
 	</header>
 
-	<div class="interview-content">
-		<h2 class="header-style">Candidates</h2>
+	<div class="interview-wrapper">
+		<h2 class="header-style">Pending Interview Confirmations</h2>
 
 		<div>
-			<table class="table request-chart" id="all-rows">
+			<table class="table interview-table" id="all-rows">
 				<thead>
 					<tr>
-						<th></th>
+						
 						<th>Name</th>
-						<th>C# proficiency</th>
-						<th>Excel proficiency</th>
-						<th>Meet?</th>
+						<th>Times available</th>
+						<th>Confirmed Time (choose one per candidate)</th>
+						<!--they are only supposed to select one date per candidate-->
 					</tr>
 
 
 				</thead>
 				<tbody>
 					<tr>
-						<th scope="row">1</th>
-						<td>James Bond</td>
-						<td>87%</td>
-						<td>87%</td>
+						
+						<td rowspan="4">James Bond</td>
+						<td>6/7/2017 2:00 pm</td>
+						<td><input type="checkbox" id="myCheck"></td>
+						</tr>
+					<tr>
+						<td>6/7/2017 2:00 pm</td>
 						<td><input type="checkbox" id="myCheck"></td>
 					</tr>
 					<tr>
-						<th scope="row">2</th>
-						<td>James Bond</td>
-						<td>87%</td>
-						<td>87%</td>
+						<td>6/7/2017 2:00 pm</td>
 						<td><input type="checkbox" id="myCheck"></td>
 					</tr>
 					<tr>
-						<th scope="row">3</th>
-						<td>James Bond</td>
-						<td>87%</td>
-						<td>87%</td>
+						<td>6/7/2017 2:00 pm</td>
 						<td><input type="checkbox" id="myCheck"></td>
 					</tr>
 
-					<tr>
-						<th scope="row">4</th>
 						<td>James Bond</td>
-						<td>87%</td>
-						<td>87%</td>
-						<td><input type="checkbox" id="myCheck"></td>
-					</tr>
-
-					<tr>
-						<th scope="row">5</th>
-						<td>James Bond</td>
-						<td>87%</td>
-						<td>87%</td>
-						<td><input type="checkbox" id="myCheck"></td>
-					</tr>
-					</tbody>
-					<tbody class="hidden table-match" id="hidden-candidate">
-					<tr >
-						<th scope="row">6</th>
-						<td>James Bond</td>
-						<td>87%</td>
-						<td>87%</td>
-						<td><input type="checkbox" id="myCheck"></td>
+						<td>
+							<p>6/7/2017 2:00 pm</p>
+							<p>6/7/2017 2:00 pm</p>
+							<p>6/7/2017 2:00 pm</p>
+							<p>6/7/2017 2:00 pm</p>
+						</td>
+						
+						<td>
+						<p><input type="checkbox" id="myCheck"></p>
+						<p><input type="checkbox" id="myCheck"></p>
+						<p><input type="checkbox" id="myCheck"></p>
+						<p><input type="checkbox" id="myCheck"></p>
+						</td>
 					</tr>
 					<tr>
-						<th scope="row">7</th>
+						
 						<td>James Bond</td>
-						<td>87%</td>
-						<td>87%</td>
-						<td><input type="checkbox" id="myCheck"></td>
+						<td>
+							<p>6/7/2017 2:00 pm</p>
+							<p>6/7/2017 2:00 pm</p>
+							<p>6/7/2017 2:00 pm</p>
+							<p>6/7/2017 2:00 pm</p>
+						</td>
+						
+						<td>
+						<p><input type="checkbox" id="myCheck"></p>
+						<p><input type="checkbox" id="myCheck"></p>
+						<p><input type="checkbox" id="myCheck"></p>
+						<p><input type="checkbox" id="myCheck"></p>
+						</td>
 					</tr>
-					<tr >
-						<th scope="row">8</th>
-						<td>James Bond</td>
-						<td>87%</td>
-						<td>87%</td>
-						<td><input type="checkbox" id="myCheck"></td>
-					</tr>
-					<tr >
-						<th scope="row">9</th>
-						<td>James Bond</td>
-						<td>87%</td>
-						<td>87%</td>
-						<td><input type="checkbox" id="myCheck"></td>
-					</tr>
-					<tr >
-						<th scope="row">10</th>
-						<td>James Bond</td>
-						<td>87%</td>
-						<td>87%</td>
-						<td><input type="checkbox" id="myCheck"></td>
+					<tr>
+						<td>lorem ipsum</td>
+						<td>Pending</td>
+						<td></td>
 					</tr>
 					
-				</tbody>
+					</tbody>
+					
 				
 			</table>
 		</div>
 
 		<div class="match-buttons">
-		<button class="btn btn-default">Schedule Interviews</button>
-		<button class="btn btn-default" id="show-candidates" onclick="showcandidates()">View all Candidates</button>
+		<button class="btn btn-default">Confirm Interviews</button>
+		
 		</div>
 
 		
