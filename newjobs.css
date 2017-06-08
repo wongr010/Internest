@@ -1,0 +1,79 @@
+.logo-size{
+	width: 160px;
+	height: 35px;
+	float: left;
+}
+
+.no-squish{
+	padding: 0px;
+}
+
+.log-in-style{
+	background-color: #00315D;
+	color: white;
+	font-weight: bold;
+}
+
+.tabbar-format{
+	padding-left: 1em;
+	padding-top: 1em;
+	border-width: 1px;
+	border-color: #328CC1;
+	color: #00315D;
+}
+
+body{
+	background-color: #1D2731;
+}
+
+form{
+	margin: auto;
+	color: white;
+	text-align: center;
+	
+    margin-right: auto;
+    margin-left: auto;
+	
+}
+
+.job-entries{
+	width: 80%;
+	
+	margin-top: 3%;
+	
+	}
+
+.job-description{
+	height: 30%;
+}
+
+.input-entry{
+	margin: auto;
+}
+
+input[type=title]{
+	margin: auto;
+}
+
+
+
+@media only screen and (max-width : 768px) {
+    	
+    	form{
+    		width: 95%;
+    	}
+
+    	.job-entries{
+    		width: 100%;
+
+    		margin-top: 3%;
+    	}
+
+    	.input-entry{
+    		text-align: center;
+    	}
+
+    	form{
+    		padding: auto;
+    	}
+    }
