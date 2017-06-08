@@ -61,11 +61,11 @@
 			
 			<ul class="nav nav-tabs nav-justified nav-style">
 				<li role="Profile"><a href="companydash.html">Profile</a></li>
-				<li role="matches" ><a href="candidatematch.html">Candidate Matches</a></li>
-				<li role="Interview Requests" class="active"><a href="companyrequest.html">Inteview Requests</a></li>
+				<li role="matches"><a href="candidatematch.html">Candidate Matches</a></li>
+				<li role="Interview Requests"><a href="companyrequest.html">Inteview Requests</a></li>
 
 				<li role="New jobs"><a href="newjobs.html"> Add New Jobs</a></li>
-				<li role="Uploaded jobs"><a href="uploaded-positions.html"> Uploaded Jobs</a></li>
+				<li role="Uploaded jobs" class="active"><a href="uploaded-positions.html"> Uploaded Jobs</a></li>
 			</ul>
 
 
@@ -78,81 +78,45 @@
 
 	</header>
 
-	<div class="interview-wrapper">
-		<h2 class="header-style">Pending Interview Confirmations</h2>
+	<div class="interview-content">
+		<h2 class="header-style">Active Positions</h2>
 
 		<div>
-			<table class="table interview-table" id="all-rows">
+			<table class="table request-chart" id="all-rows">
 				<thead>
 					<tr>
+						<th></th>
+						<th>Position Title</th>
+						<th>Date Posted</th>
+						<th></th>
 						
-						<th class="interview-table-header">Name</th>
-						<th class="interview-table-header">Times available</th>
-						<th class="interview-table-header">Confirmed Time (choose one per candidate)</th>
-						<!--they are only supposed to select one date per candidate-->
 					</tr>
 
 
 				</thead>
 				<tbody>
 					<tr>
+						<th>1</th>
+						<td>HR Assistant</td>
+						<td>6/8/2017</td>
 						
-						<td rowspan="4">James Bond</td>
-						<td>6/7/2017 2:00 pm</td>
-						<td><input type="checkbox" id="myCheck"></td>
-						</tr>
-					<tr>
-						<td>6/7/2017 2:00 pm</td>
-						<td><input type="checkbox" id="myCheck"></td>
+						<td><button class="btn btn-default" onclick="deactivatejobs('1')">Deactivate</button></td>
 					</tr>
 					<tr>
-						<td>6/7/2017 2:00 pm</td>
-						<td><input type="checkbox" id="myCheck"></td>
+						<th>2</th>
+						<td>HR Assistant</td>
+						<td>6/8/2017</td>
+						
+						<td><button class="btn btn-default" onclick="deactivatejobs('2')">Deactivate</button></td>
 					</tr>
 					<tr>
-						<td>6/7/2017 2:00 pm</td>
-						<td><input type="checkbox" id="myCheck"></td>
+						<th>3</th>
+						<td>HR Assistant</td>
+						<td>6/8/2017</td>
+						
+						<td><button class="btn btn-default" onclick="deactivatejobs('3')">Deactivate</button></td>
 					</tr>
 
-					<tr>
-						
-						<td rowspan="4">James Bond</td>
-						<td>6/7/2017 2:00 pm</td>
-						<td><input type="checkbox" id="myCheck"></td>
-						</tr>
-					<tr>
-						<td>6/7/2017 2:00 pm</td>
-						<td><input type="checkbox" id="myCheck"></td>
-					</tr>
-					<tr>
-						<td>6/7/2017 2:00 pm</td>
-						<td><input type="checkbox" id="myCheck"></td>
-					</tr>
-					<tr>
-						<td>6/7/2017 2:00 pm</td>
-						<td><input type="checkbox" id="myCheck"></td>
-					</tr>
-
-					<tr>
-						
-						<td rowspan="4">James Bond</td>
-						<td>6/7/2017 2:00 pm</td>
-						<td><input type="checkbox" id="myCheck"></td>
-						</tr>
-					<tr>
-						<td>6/7/2017 2:00 pm</td>
-						<td><input type="checkbox" id="myCheck"></td>
-					</tr>
-					<tr>
-						<td>6/7/2017 2:00 pm</td>
-						<td><input type="checkbox" id="myCheck"></td>
-					</tr>
-					<tr>
-						<td>6/7/2017 2:00 pm</td>
-						<td><input type="checkbox" id="myCheck"></td>
-					</tr>
-
-						
 					
 					</tbody>
 					
@@ -160,10 +124,50 @@
 			</table>
 		</div>
 
-		<div class="match-buttons">
-		<button class="btn btn-default" onclick="interview_confirmed()">Confirm Interviews</button>
-		
+		<h2 class="header-style">Deactivated positions</h2>
+
+		<div>
+			<table class="table request-chart" id="all-rows">
+				<thead>
+					<tr>
+						
+						<th>Position Title</th>
+						<th>Date Posted</th>
+						<th>Date Deactivated</th>
+						
+					</tr>
+
+
+				</thead>
+				<tbody>
+					<tr>
+						
+						<td>HR Assistant</td>
+						<td>6/8/2017</td>
+						
+						<td>6/8/2017</td>
+					</tr>
+					<tr>
+						<td>HR Assistant</td>
+						<td>6/8/2017</td>
+						
+						<td>6/8/2017</td>
+					</tr>
+					<tr>
+						<td>HR Assistant</td>
+						<td>6/8/2017</td>
+						
+						<td>6/8/2017</td>
+					</tr>
+
+					
+					</tbody>
+					
+				
+			</table>
 		</div>
+
+		
 
 		
 	</div>

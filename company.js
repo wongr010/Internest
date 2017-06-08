@@ -27,3 +27,7 @@ function interview_confirmed(){
 
 }
 
+function deactivatejobs(jobno){
+	confirm("Are you sure you want to deactive job no. "+ jobno + "?");
+}
+
