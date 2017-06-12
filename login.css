@@ -1,4 +1,5 @@
 /* feedback reports, interview requests, job recommendations*/
+/*newuser.html*/
 .logo-size{
 	width: 160px;
 	height: 35px;
@@ -74,6 +75,11 @@ label{
 	margin-left: 4%;
 	margin-right: 4%;
 
+}
+
+.sign-up-advert{
+	padding-top: 3%;
+	font-size: 1.5em;
 }
 
 .switch {

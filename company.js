@@ -1,4 +1,5 @@
 var candidatesshown=false;
+var isemployer=false;
 
 function checkmeet() {
     var x = document.getElementById("myCheck");
@@ -29,5 +30,11 @@ function interview_confirmed(){
 
 function deactivatejobs(jobno){
 	confirm("Are you sure you want to deactive job no. "+ jobno + "?");
+}
+
+function toggleposition(){
+	if (!candidatesshown) candidatesshown=true;
+	else candidatesshown=false;
+	
 }
 
