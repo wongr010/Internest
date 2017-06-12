@@ -1,6 +1,7 @@
 var candidatesshown=false;
 var isemployer=false;
 
+
 function checkmeet() {
     var x = document.getElementById("myCheck");
     x.checked = true;
@@ -32,16 +33,20 @@ function deactivatejobs(jobno){ /*Taking down uploaded jobs*/
 	confirm("Are you sure you want to deactive job no. "+ jobno + "?");
 }
 
-function toggleposition(){ /*Dynamically change which sign-up page to redirect to*/
+function toggleposition(prev_page){ /*Dynamically change which sign-up page to redirect to*/
 	if (!isemployer) {
 		isemployer=true;
-		document.getElementById("user-toggle").href="registration.html";
-		console.log("employer");
+		if(prev_page=='newuser'){
+			document.getElementById("newuser-toggle").href="registration.html";
+		}
+		else document.getElementById("user-toggle").href="companydash.html";
 	}
 	else {
 		isemployer=false;
-		document.getElementById("user-toggle").href="studentreg.html";
-		console.log("student");
+		if (prev_page=='newuser'){
+			document.getElementById("newuser-toggle").href="studentreg.html";
+		}
+		else document.getElementById("user-toggle").href="student dashboard.html";
 	}
 	
 
