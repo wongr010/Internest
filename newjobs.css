@@ -1,3 +1,4 @@
+/* Used with registration.html, newjobs.html*/
 .logo-size{
 	width: 160px;
 	height: 35px;
@@ -29,7 +30,7 @@ body{
 form{
 	margin: auto;
 	color: white;
-	text-align: center;
+	/*text-align: center;*/
 	
     margin-right: auto;
     margin-left: auto;
@@ -49,6 +50,12 @@ form{
 
 .input-entry{
 	margin: auto;
+}
+
+
+
+.submission-button{
+	text-align: center;
 }
 
 input[type=title]{
