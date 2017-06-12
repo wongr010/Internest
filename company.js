@@ -6,7 +6,7 @@ function checkmeet() {
     x.checked = true;
 }
 
-function showcandidates(){
+function showcandidates(){ /*Candidate match*/
 
 	if (!candidatesshown){
 		document.getElementById("show-candidates").innerHTML = "View top candidates";
@@ -28,13 +28,22 @@ function interview_confirmed(){
 
 }
 
-function deactivatejobs(jobno){
+function deactivatejobs(jobno){ /*Taking down uploaded jobs*/
 	confirm("Are you sure you want to deactive job no. "+ jobno + "?");
 }
 
-function toggleposition(){
-	if (!candidatesshown) candidatesshown=true;
-	else candidatesshown=false;
+function toggleposition(){ /*Dynamically change which sign-up page to redirect to*/
+	if (!isemployer) {
+		isemployer=true;
+		document.getElementById("user-toggle").href="registration.html";
+		console.log("employer");
+	}
+	else {
+		isemployer=false;
+		document.getElementById("user-toggle").href="studentreg.html";
+		console.log("student");
+	}
 	
+
 }
 
