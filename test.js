@@ -1,7 +1,7 @@
 var bubblearray=[false, false, false, false, false, false];
 var checkarray=[false,false, false, false, false, false, false, false,
 false, false, false, false, false, false, false, false, false, false, false, false,];
-
+var bubblearray4=[false, false, false, false, false, false, false, false];
 
 function itemselected(sectionNo, which, index){
 	
