@@ -84,7 +84,7 @@
 							<td>
 								<label for="least-checkbox-76" class="answer-hover">
 									
-									<span class="survey-icon icon-plum-radio control__indicator" onclick="itemselected()"></span>
+									<span class="survey-icon icon-plum-radio control__indicator" onclick="itemselected('unlike', 0)"></span>
 
 								</label>
                                 <input type="checkbox" class="no-display ng-scope ng-pristine ng-untouched ng-valid ng-empty" checklist-value="statement.id" unchecked-list="ans_form.mid" checklist-shared="ans_form.most" checklist-max-size="cur_question.question.expect.Least" id="least-checkbox-76" value="76" ng-model="checked">
@@ -93,35 +93,35 @@
 							<td class="border-bottom-grey"><h4 class="ng-binding">I tend to keep others at a distance.</h4></td>
 							<td>
 								<label for="most-checkbox-76" class="answer-hover">
-									<span class="survey-icon icon-plum-radio" ng-class="{'icon-plum-radio-selected most': checklistChecked(statement.id, ans_form.most), 'icon-plum-radio': !checklistChecked(statement.id, ans_form.most)}"></span>
+									<span class="survey-icon icon-plum-radio" ng-class="{'icon-plum-radio-selected most': checklistChecked(statement.id, ans_form.most), 'icon-plum-radio': !checklistChecked(statement.id, ans_form.most)}" onclick="itemselected('like', 1)"></span>
 								</label>
                                 <input type="checkbox" class="no-display ng-scope ng-pristine ng-untouched ng-valid ng-empty" checklist-value="statement.id" unchecked-list="ans_form.mid" checklist-shared="ans_form.least" checklist-max-size="cur_question.question.expect.Most" id="most-checkbox-76" value="76" ng-model="checked">
 							</td>
 						</tr><!-- end ngRepeat: statement in cur_question.question.statements --><tr ng-repeat="statement in cur_question.question.statements" class="ng-scope">
 							<td>
 								<label for="least-checkbox-77" class="answer-hover">
-									<span class="survey-icon icon-plum-radio" ng-class="{'icon-plum-radio-selected least': checklistChecked(statement.id, ans_form.least), 'icon-plum-radio': !checklistChecked(statement.id, ans_form.least)}"></span>
+									<span class="survey-icon icon-plum-radio" ng-class="{'icon-plum-radio-selected least': checklistChecked(statement.id, ans_form.least), 'icon-plum-radio': !checklistChecked(statement.id, ans_form.least)}" onclick="itemselected('unlike', 2)"></span>
 								</label>
                                 <input type="checkbox" class="no-display ng-scope ng-pristine ng-untouched ng-valid ng-empty" checklist-value="statement.id" unchecked-list="ans_form.mid" checklist-shared="ans_form.most" checklist-max-size="cur_question.question.expect.Least" id="least-checkbox-77" value="77" ng-model="checked">
 							</td>
 							<td class="border-bottom-grey"><h4 class="ng-binding">I sometimes can't be bothered with others' needs.</h4></td>
 							<td>
 								<label for="most-checkbox-77" class="answer-hover">
-									<span class="survey-icon icon-plum-radio" ng-class="{'icon-plum-radio-selected most': checklistChecked(statement.id, ans_form.most), 'icon-plum-radio': !checklistChecked(statement.id, ans_form.most)}"></span>
+									<span class="survey-icon icon-plum-radio" ng-class="{'icon-plum-radio-selected most': checklistChecked(statement.id, ans_form.most), 'icon-plum-radio': !checklistChecked(statement.id, ans_form.most)}" onclick="itemselected('like', 3)"></span>
 								</label>
                                 <input type="checkbox" class="no-display ng-scope ng-pristine ng-untouched ng-valid ng-empty" checklist-value="statement.id" unchecked-list="ans_form.mid" checklist-shared="ans_form.least" checklist-max-size="cur_question.question.expect.Most" id="most-checkbox-77" value="77" ng-model="checked">
 							</td>
 						</tr><!-- end ngRepeat: statement in cur_question.question.statements --><tr ng-repeat="statement in cur_question.question.statements" class="ng-scope">
 							<td>
 								<label for="least-checkbox-78" class="answer-hover">
-									<span class="survey-icon icon-plum-radio" ng-class="{'icon-plum-radio-selected least': checklistChecked(statement.id, ans_form.least), 'icon-plum-radio': !checklistChecked(statement.id, ans_form.least)}"></span>
+									<span class="survey-icon icon-plum-radio" ng-class="{'icon-plum-radio-selected least': checklistChecked(statement.id, ans_form.least), 'icon-plum-radio': !checklistChecked(statement.id, ans_form.least)}" onclick="itemselected('unlike', 4)"></span>
 								</label>
                                 <input type="checkbox" class="no-display ng-scope ng-pristine ng-untouched ng-valid ng-empty" checklist-value="statement.id" unchecked-list="ans_form.mid" checklist-shared="ans_form.most" checklist-max-size="cur_question.question.expect.Least" id="least-checkbox-78" value="78" ng-model="checked">
 							</td>
 							<td class="border-bottom-grey"><h4 class="ng-binding">I don't particularly like routine or structure.</h4></td>
 							<td>
 								<label for="most-checkbox-78" class="answer-hover">
-									<span class="survey-icon icon-plum-radio" ng-class="{'icon-plum-radio-selected most': checklistChecked(statement.id, ans_form.most), 'icon-plum-radio': !checklistChecked(statement.id, ans_form.most)}"></span>
+									<span class="survey-icon icon-plum-radio" ng-class="{'icon-plum-radio-selected most': checklistChecked(statement.id, ans_form.most), 'icon-plum-radio': !checklistChecked(statement.id, ans_form.most)}" onclick="itemselected('like', 5)"></span>
 								</label>
                                 <input type="checkbox" class="no-display ng-scope ng-pristine ng-untouched ng-valid ng-empty" checklist-value="statement.id" unchecked-list="ans_form.mid" checklist-shared="ans_form.least" checklist-max-size="cur_question.question.expect.Most" id="most-checkbox-78" value="78" ng-model="checked">
 							</td>
