@@ -1,0 +1,215 @@
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.img-responsive {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    }
+
+    img {
+    vertical-align: middle;
+    border: 0px;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+img[Attributes Style] {
+    width: 365px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+body {
+    font-family: "proxima-nova-1","proxima-nova-2", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.428571429;
+    -webkit-font-smoothing: antialiased;
+    color: #444444;
+    background-color: #ffffff;
+}
+
+
+html {
+    font-size: 62.5%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+input, button, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+button, input {
+    line-height: normal;
+}
+
+button, input, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: 100%;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+input[type="hidden" i], input[type="image" i], input[type="file" i] {
+    -webkit-appearance: initial;
+    background-color: initial;
+    padding: initial;
+    border: initial;
+}
+
+input[type="hidden" i] {
+    display: none;
+}
+
+input {
+    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    user-select: text;
+    cursor: auto;
+    padding: 1px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+
+input, textarea, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em 0em 0em 0em;
+    font: 13.3333px Arial;
+}
+
+input, textarea, select, button, meter, progress {
+    -webkit-writing-mode: horizontal-tb;
+}
+
+.answer-hover {
+    cursor: pointer !important;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin: 4px 0 0;
+    margin-top: 1px \9;
+    line-height: normal;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.no-display {
+    visibility: hidden;
+}
+
+input, button, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+button, input {
+    line-height: normal;
+}
+
+button, input, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: 100%;
+}
+
+.selected {
+    border-color: #00aeef !important;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.img-base {
+    border: 6px solid #fff;
+    border-radius: 24px;
+    transition: .2s ease;
+    -webkit-transform: scale(.92);
+    -ms-transform: scale(.92);
+    transform: scale(.92);
+    pointer-events: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+
+/*SHIT I ADDED MYSELF*/
+
+body{
+	background-color: #1D2731;
+}
+
+.visible-form-styling{
+	background-color: white;
+}
+
+hr{
+	margin-bottom: 0px;
+}
+
+h4{
+	margin-top: 0px;
+	padding-top: 10px;
+}

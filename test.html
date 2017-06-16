@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<title>Test page</title>
+	<link rel="stylesheet" href = "css/bootstrap.min.css">
+	<link rel="stylesheet" href="test.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="test.js"></script>
+</head>
+<body>
+
+<header>
+
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand no-squish" href="index.html">
+						<img alt="Brand" src="seethrushort.png" alt="nest" class="logo-size">
+					</a>
+
+				</div>
+				<div class="collapse navbar-collapse menu-button-manip" id="bs-example-navbar-collapse-1">
+
+					<form class="navbar-form navbar-right">
+
+						<button type="submit" class="btn btn-default log-in-style">LOG OUT</button>
+					</form>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">About Us</a></li>
+						<li><a href="#"> Looking to Hire?</a></li>
+						<li> <a href="#"> Looking to get Hired?</a></li>
+
+					</ul>
+
+				</div>
+			</div>
+
+			
+			
+
+		</nav>
+		</header>
+<img ng-src="https://plum-application.s3.amazonaws.com/static/img/survey-img/image-3.jpg" alt="Problem Solving" class="center-block img-responsive" width="365" src="https://plum-application.s3.amazonaws.com/static/img/survey-img/image-3.jpg">
+
+<hr class="dotted visible-form-styling">
+
+<div class="text-center visible-form-styling">
+					
+					<h4>Select the missing piece [?] below</h4>
+					
+					<form name="asc.answers" novalidate="" ng-model="ans_form" class="ng-pristine ng-untouched ng-valid ng-not-empty ">
+						<input id="question" type="hidden" value="" autocomplete="off">
+						<!-- ngRepeat: statement in cur_question.question.statements --><span ng-repeat="statement in cur_question.question.statements" class="ng-scope">
+						<input type="checkbox" class="no-display ng-scope ng-pristine ng-untouched ng-valid ng-empty" checklist-value="statement.id" unchecked-list="ans_form.mid" checklist-max-size="cur_question.question.expect.Most" id="checkbox-11" value="11" ng-model="checked">
+						<label for="checkbox-11" class="answer-hover">
+							<img class="img-base" width="109" ng-src="https://plum-application.s3.amazonaws.com/static/img/survey-img/image-3-a1.png" ng-class="{'selected': checklistChecked(statement.id, ans_form.most)}" src="https://plum-application.s3.amazonaws.com/static/img/survey-img/image-3-a1.png" onclick="addselected()">
+						</label>
+						</span><!-- end ngRepeat: statement in cur_question.question.statements --><span ng-repeat="statement in cur_question.question.statements" class="ng-scope">
+						<input type="checkbox" class="no-display ng-scope ng-pristine ng-untouched ng-valid ng-empty" checklist-value="statement.id" unchecked-list="ans_form.mid" checklist-max-size="cur_question.question.expect.Most" id="checkbox-12" value="12" ng-model="checked">
+						<label for="checkbox-12" class="answer-hover">
+							<img class="img-base" width="109" ng-src="https://plum-application.s3.amazonaws.com/static/img/survey-img/image-3-a2.png" ng-class="{'selected': checklistChecked(statement.id, ans_form.most)}" src="https://plum-application.s3.amazonaws.com/static/img/survey-img/image-3-a2.png" onclick="addselected()">
+						</label>
+						</span><!-- end ngRepeat: statement in cur_question.question.statements --><span ng-repeat="statement in cur_question.question.statements" class="ng-scope">
+						<input type="checkbox" class="no-display ng-scope ng-pristine ng-untouched ng-valid ng-empty" checklist-value="statement.id" unchecked-list="ans_form.mid" checklist-max-size="cur_question.question.expect.Most" id="checkbox-13" value="13" ng-model="checked">
+						<label for="checkbox-13" class="answer-hover">
+							<img class="img-base" width="109" ng-src="https://plum-application.s3.amazonaws.com/static/img/survey-img/image-3-a3.png" ng-class="{'selected': checklistChecked(statement.id, ans_form.most)}" src="https://plum-application.s3.amazonaws.com/static/img/survey-img/image-3-a3.png" onclick="addselected()">
+						</label>
+						</span><!-- end ngRepeat: statement in cur_question.question.statements --><span ng-repeat="statement in cur_question.question.statements" class="ng-scope">
+						<input type="checkbox" class="no-display ng-scope ng-pristine ng-untouched ng-valid ng-empty" checklist-value="statement.id" unchecked-list="ans_form.mid" checklist-max-size="cur_question.question.expect.Most" id="checkbox-14" value="14" ng-model="checked">
+						<label for="checkbox-14" class="answer-hover">
+							<img class="img-base" width="109" ng-src="https://plum-application.s3.amazonaws.com/static/img/survey-img/image-3-a4.png" ng-class="{'selected': checklistChecked(statement.id, ans_form.most)}" src="https://plum-application.s3.amazonaws.com/static/img/survey-img/image-3-a4.png">
+						</label>
+						</span><!-- end ngRepeat: statement in cur_question.question.statements --><span ng-repeat="statement in cur_question.question.statements" class="ng-scope">
+						<input type="checkbox" class="no-display ng-scope ng-pristine ng-untouched ng-valid ng-empty" checklist-value="statement.id" unchecked-list="ans_form.mid" checklist-max-size="cur_question.question.expect.Most" id="checkbox-15" value="15" ng-model="checked">
+						<label for="checkbox-15" class="answer-hover">
+							<img class="img-base" width="109" ng-src="https://plum-application.s3.amazonaws.com/static/img/survey-img/image-3-a5.png" ng-class="{'selected': checklistChecked(statement.id, ans_form.most)}" src="https://plum-application.s3.amazonaws.com/static/img/survey-img/image-3-a5.png">
+						</label>
+						</span><!-- end ngRepeat: statement in cur_question.question.statements -->
+					</form>
+					<assessment-controls cur-form="asc.answers" class="ng-scope"><!-- Navigation Snippet -->
+<div class="mt20 text-center" style="height: 50px">
+	<button class="btn btn-previous mr25 ng-binding" ng-click="prev()" ng-class="{'disabled': loading}">
+	  Back
+	</button>
+	<div style="position:relative; display:inline;"><span load-spinner="" trigger="false" class="ng-scope"></span></div>
+	<button class="btn btn-next ml25 ng-binding disabled" ng-click="next()" ng-class="{'disabled': !isValid(ans_form, cur_question) || loading}">
+	  Next
+	</button>
+</div>
+<!-- <p class="mt20">In Array {{ans_form | json}} </p> --></assessment-controls>
+				</div>
+</body>
+</html>
