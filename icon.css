@@ -181,10 +181,10 @@
   content: "\e934";
 }
 .icon-plum-checkbox-selected:before {
-  content: "\e935";
+  content: url(checked.png);
 }
 .icon-plum-checkbox:before {
-  content: "\e936";
+  content: url(unchecked.png);
 }
 .icon-plum-radio-selected:before {
   content: url(selected.png);
