@@ -1,30 +1,61 @@
 var bubblearray=[false, false, false, false, false, false];
+var checkarray=[false,false, false, false, false, false, false, false,
+false, false, false, false, false, false, false, false, false, false, false, false,];
 
 
-function itemselected(which, index){
+function itemselected(sectionNo, which, index){
 	
-	bubblearray[index]=!bubblearray[index];
-	
-	if(!bubblearray[index]){
+	if(sectionNo==1){
+		bubblearray[index]=!bubblearray[index];
+
+		if(!bubblearray[index]){
+			if(which=="like"){
+				$(event.target).removeClass("icon-plum-radio-selected");
+				$(event.target).addClass("icon-plum-radio");
+			}
+			else{
+				$(event.target).removeClass("icon-plum-radio-notlikeuslcted");
+				$(event.target).addClass("icon-plum-radio");
+			}
+
+			return;
+		}
+
+		$(event.target).removeClass("icon-plum-radio");
 		if(which=="like"){
-			$(event.target).removeClass("icon-plum-radio-selected");
-			$(event.target).addClass("icon-plum-radio");
-		}
-		else{
-			$(event.target).removeClass("icon-plum-radio-notlikeuslcted");
-			$(event.target).addClass("icon-plum-radio");
+			$(event.target).addClass("icon-plum-radio-selected");
 		}
 
-		return;
-	}
-	
-	$(event.target).removeClass("icon-plum-radio");
-	if(which=="like"){
-		$(event.target).addClass("icon-plum-radio-selected");
+		if(which=="unlike"){
+			$(event.target).addClass("icon-plum-radio-notlikeuslcted");
+		}
 	}
 
-	if(which=="unlike"){
-		$(event.target).addClass("icon-plum-radio-notlikeuslcted");
+	if(sectionNo==2){
+		checkarray[index]=!checkarray[index];
+
+		if(!checkarray[index]){
+			if(which=="like"){
+				$(event.target).removeClass("icon-plum-checkbox-selected");
+				$(event.target).addClass("icon-plum-checkbox");
+			}
+			else{
+				$(event.target).removeClass("icon-plum-checkbox-notlikeuslcted");
+				$(event.target).addClass("icon-plum-checkbox");
+			}
+
+			return;
+		}
+
+		$(event.target).removeClass("icon-plum-checkbox");
+		if(which=="like"){
+			$(event.target).addClass("icon-plum-checkbox-selected");
+		}
+
+		if(which=="unlike"){
+			$(event.target).addClass("icon-plum-checkbox-notlikeuslcted");
+		}
 	}
-	
-}
+	}
+
+

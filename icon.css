@@ -198,3 +198,7 @@
 .icon-plum-radio-notlikeuslcted:before{
   content: url(notlikeuselected.png);
 }
+
+.icon-plum-checkbox-notlikeuslcted{
+  content: url(unlikechecked.png);
+}
