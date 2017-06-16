@@ -5,10 +5,14 @@ var bubblearray4=[false, false, false, false, false, false, false, false];
 
 function itemselected(sectionNo, which, index){
 	
-	if(sectionNo==1){
-		bubblearray[index]=!bubblearray[index];
+	if(sectionNo==1 || sectionNo==3){
 
-		if(!bubblearray[index]){
+		 if (sectionNo==1) bubblearray[index]=!bubblearray[index];
+		 else bubblearray4[index]=!bubblearray4[index];
+		 
+		if(!bubblearray[index] && sectionNo==1){
+			
+
 			if(which=="like"){
 				$(event.target).removeClass("icon-plum-radio-selected");
 				$(event.target).addClass("icon-plum-radio");
@@ -21,12 +25,29 @@ function itemselected(sectionNo, which, index){
 			return;
 		}
 
+		if(!bubblearray4[index] && sectionNo==3){
+			
+
+			if(which=="like"){
+				$(event.target).removeClass("icon-plum-radio-selected");
+				$(event.target).addClass("icon-plum-radio");
+			}
+			else{
+				$(event.target).removeClass("icon-plum-radio-notlikeuslcted");
+				$(event.target).addClass("icon-plum-radio");
+			}
+
+			return;
+		}
+
+
 		$(event.target).removeClass("icon-plum-radio");
 		if(which=="like"){
 			$(event.target).addClass("icon-plum-radio-selected");
 		}
 
 		if(which=="unlike"){
+			
 			$(event.target).addClass("icon-plum-radio-notlikeuslcted");
 		}
 	}
@@ -56,6 +77,8 @@ function itemselected(sectionNo, which, index){
 			$(event.target).addClass("icon-plum-checkbox-notlikeuslcted");
 		}
 	}
+
+
 	}
 
 
