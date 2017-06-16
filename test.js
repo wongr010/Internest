@@ -1,9 +1,8 @@
 
-window.onclick = function(e) {
-    var name = e.srcElement.className;
 
-    
-    var namelist= document.getElementsByClassName(name);
-    alert(namelist[0]);
-    document.getElementsByClassName(name)[0].className += " selected";
+
+function itemselected(){
+	$(event.target).removeClass("icon-plum-radio");
+	$(event.target).addClass("icon-plum-radio-selected");
+	console.log("added!");
 }
