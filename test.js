@@ -81,4 +81,9 @@ function itemselected(sectionNo, which, index){
 
 	}
 
+function warning(){
+	confirm("You will not be able to change your answer after you submit.");
+}
+
+
 

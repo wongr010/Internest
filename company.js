@@ -52,3 +52,7 @@ function toggleposition(prev_page){ /*Dynamically change which sign-up page to r
 
 }
 
+function reset(){
+	isemployer=false;
+}
+
