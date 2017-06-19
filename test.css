@@ -6,3 +6,13 @@ input {
     opacity: 0;
 }
 
+#assessment-box{
+    margin: 5%;
+    color: white;
+
+}
+
+.assessment-btn{
+    background-color: #328CC1;
+    border-color: #328CC1;
+}

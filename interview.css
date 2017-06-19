@@ -46,6 +46,8 @@ tr{
 
 }
 
+
+
 header{
 	width: 100%;
 }
@@ -82,4 +84,19 @@ header{
     	.employer-intro{
     		width: 100%;
     	}
+
+    	.nav-style{
+    		display: flex;
+    	}
+
+    	.nav-style li{
+			display: flex;
+			flex: 1;
+		}
+
+		.nav-style li a{
+			flex: 1;
+		}
+
+
     }

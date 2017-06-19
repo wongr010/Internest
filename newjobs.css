@@ -87,4 +87,17 @@ input[type=title]{
     	form{
     		padding: auto;
     	}
+
+    	.nav-style{
+    		display: flex;
+    	}
+
+    	.nav-style li{
+			display: flex;
+			flex: 1;
+		}
+
+		.nav-style li a{
+			flex: 1;
+		}
     }
