@@ -1,0 +1,1053 @@
+
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+    /*Css class added by manjuu  on 31 Aug 2016*/
+    .hr-menu .horizontal-menu {
+        clear: left;
+    }
+    /*.wrapper {
+        margin-top: 142px !important;
+    }*/
+    .wrapper {
+        width: 100%;
+    }
+
+    .testLeftAlign {
+        text-align: left !important;
+    }
+
+    .horizontal-menu .navbar-nav > li > a {
+        padding: 10px;
+    }
+
+    .testLeft {
+        width: 162px;
+    }
+
+    .afterLoginCont form ul li {
+        margin: 0;
+    }
+
+        .afterLoginCont form ul li ul li .btn {
+            width: 230px;
+            font-size: 20px;
+            margin: 11% 7% !important;
+        }
+
+            .afterLoginCont form ul li ul li .btn .font20 {
+                font-size: 14px;
+            }
+
+    .rtu_subTitle {
+        border-bottom-right-radius: 30px;
+        border-top-right-radius: 30px;
+        height: 60px;
+        margin: 0 auto 30px;
+        width: 77%;
+    }
+
+    .readyToUseCont h1 {
+        font-size: 21px;
+    }
+
+    .rtuTestBox {
+        width: 28%;
+        margin-left: 4%;
+    }
+
+    .box1 {
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    .footerNav {
+        margin: 0 12%;
+        width: 76%;
+    }
+
+    .resetInfoCont table tr td:last-child {
+        width: 14%;
+    }
+
+    .rprtbox {
+        width: 29.2%;
+    }
+
+    .rprtbox2 {
+        width: 29.2%;
+    }
+
+    .rprtbox3 {
+        width: 29.2%;
+    }
+
+    .subrprtBox2 h3 {
+        font-size: 18px;
+    }
+
+    .viewInviteCont .dataTables_filter {
+        width: 43%;
+    }
+
+    .inviteTimeSet {
+        border-top: 1px solid #ddd;
+        border-left: 0;
+        padding-top: 20px;
+    }
+
+    .inviteSetCont {
+        padding: 10px 20px;
+    }
+
+    .inviteTimeSet .input-group .marRight6 {
+        margin: 0;
+    }
+
+
+    .rtuFilter {
+        width: 20%;
+        margin: 37px 3% 17px 0;
+    }
+
+    .loginOr {
+        margin: 19% 35px 0 !important;
+    }
+
+    .headRow {
+        height: 80px;
+        padding: 28px 45px 15px 20px;
+    }
+
+    .smallPlanImg {
+        background-size: 100% auto;
+        height: 115px;
+    }
+
+    .mediumPlanImg {
+        background-size: 100% auto;
+        height: 115px;
+    }
+
+    .largePlanImg {
+        background-size: 100% auto;
+        height: 115px;
+    }
+
+    .pricePlanBox {
+        margin: 0 1.5% 40px 5.5%;
+    }
+
+    .planDetails ul li:first-child {
+        min-height: 78px;
+    }
+
+    ul.sidebar-menu {
+        margin-top: 20px;
+    }
+
+    .breadcrumbs-alt {
+        margin-top: 20px;
+    }
+
+    .subusagesMonthCont {
+        padding: 0 5% 2%;
+    }
+
+    .subusagesCustomCont {
+        padding: 0 5% 2%;
+    }
+
+    .sharingCont .table tr td {
+        word-break: break-all;
+    }
+
+    .customContSearch .form-control {
+        padding: 6px 9px;
+    }
+
+    .brand {
+        float: none;
+    }
+
+    .QuestionsCont .adv-table tr td .table tr td:first-child {
+        width: 19%;
+    }
+
+        .QuestionsCont .adv-table tr td .table tr td:first-child .floatLeft {
+            float: none;
+        }
+
+    .wrongImg {
+        margin: 0 27% 5px;
+        float: none;
+    }
+
+    .QuestionsCont .adv-table tr td .table tr:nth-child(2) td .btn {
+        width: 100%;
+        margin: 10px 0 !important;
+    }
+
+    .correctImg {
+        margin: 0 18%;
+    }
+
+    .QuestionsCont input {
+        margin: 5px auto;
+        width: 100%;
+    }
+
+    .searchTopBtn input {
+        width: 250px;
+    }
+
+    .inviteCont .btn {
+        margin-left: 4%;
+    }
+
+    .form-horizontal .control-label {
+        font-size: 13px !important;
+    }
+
+    /*------------add question------------------*/
+    .addQuesTopBar ul li {
+        margin: 5px 7px;
+    }
+
+    .addQuesTopBar .search {
+        width: 150px;
+    }
+
+    .addQuesTopBar ul .btn {
+        font-size: 11px;
+    }
+
+    .addQuesTopBar ul .wid184 {
+        width: 150px;
+    }
+    /*----------------------add question page css--------*/
+    .passValueBox textarea {
+        width: 100px;
+    }
+
+    .testCaseBox textarea {
+        width: 100px;
+    }
+
+    .codePassValue {
+        width: 67%;
+    }
+
+    .codeTestCase {
+        width: 32%;
+    }
+    /*---------------all question--------------*/
+    .questionBox {
+        width: 75%;
+    }
+    /*My questions steps*/
+    .stepsCont ul {
+        display: block;
+        margin: 0 22%;
+    }
+
+    .stepsCont h3 {
+        font-size: 26px;
+    }
+
+    .mytestCont .bdr-crv .wid71 {
+        width: 66%;
+    }
+
+    #refer .modal-dialog {
+        width: 95%;
+    }
+
+    .howWorkSub ul li {
+        font-size: 13px;
+        margin: 0 15px;
+        padding: 7px 0;
+    }
+    /*--------------add skill------------*/
+
+    .addSkillCont .table-responsive {
+        border: 1px solid #ddd;
+        margin-bottom: 15px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        width: 100%;
+    }
+
+    /*Preeya: Jquery datatable Ui changes*/
+    #ReportGrid .dataTables_filter {
+        width: 200px !important;
+    }
+
+        #ReportGrid .dataTables_filter input {
+            width: 196px !important;
+        }
+
+    .mytestCont {
+        margin-top: 142px;
+    }
+
+    /*css added by gaurav for menu on 30 Aug 2016*/
+    .horizontal-menu .navbar-nav > li > a {
+        padding: 7px !important;
+        font-size: 11px;
+    }
+
+    .top-nav img {
+        width: 15px;
+    }
+
+    .top-nav .top-menu .dropdown {
+        margin-bottom: 10px;
+    }
+
+    .mytestCont .nav-tabs.nav-justified > li {
+        width: auto;
+    }
+
+        .mytestCont .nav-tabs.nav-justified > li:nth-child(4) div {
+            width: 180px !important;
+        }
+
+    .searchTopBtn {
+        width: 65%;
+    }
+
+        .searchTopBtn input:first-child {
+            width: 300px;
+        }
+
+    .searchTopFixed {
+        top: 138px;
+    }
+
+    .rtuTestBox a .inner img {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    /*Css added for simulator Quoestion on 10 sept 2016*/
+
+    #frmIMDescriptiveQuestion table tr th:first-child {
+        width: 24%;
+    }
+
+    #frmIMDescriptiveQuestion table tr th:nth-child(2) {
+        width: 50%;
+    }
+
+    #frmIMDescriptiveQuestion table tr .wid85 table tr td:nth-child(1) {
+        width: 60% !important;
+    }
+    /*------------------- question filter 07.09.2016------------*/
+
+    /*.queFilter ul .dropdown {
+        height: 50px;
+    }
+
+    .queFilter {
+        height: 52px;
+    }*/
+    /*interview feedback my test changes 3 mar 2017*/
+    .mytestCont table tr td .font18 {
+        font-size: 13px;
+    }
+    /*---------------- Report flags ---------------------*/
+    .imdatagrid .table-responsive {
+        border: 1px solid #ddd;
+        margin-bottom: 15px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        width: 100%;
+    }
+
+    .reportCont .btn-success {
+        margin-bottom: 15px;
+    }
+
+    .addQuesTopBar .form-control {
+        width: 100%;
+    }
+/*testlibrary leftpanel changes 5 may 2017*/
+.readyToUseLeftSide { margin-top:140px
+}
+
+
+}
+
+    .mainTestCode table tr td a, .mainTestCode table tr td {
+        font-size: 13px;
+    }
+
+    .myTestInfo .interviewFeed, .myTestInfo .rprtHr {
+        width: 170px;
+    }
+     .addQuesTopBar .form-control {
+        width: 57%;
+    }
+
+    .addQuesTopBar .input-group {
+        width: 60%;
+    }
+
+    .addQuesTopBar .input-group-btn {
+        width: 115px;
+    }
+
+    .addQuesTopBar form {
+        width: 100%;
+        float: left;
+        display: block;
+    }
+
+    .myMainQuestionCont .nav-tabs.nav-justified > li {
+        width: auto;
+    }
+}
+/*768 end here*/
+
+@media only screen and (min-width:800px) and (max-width: 899px) {
+    .inviteCont .btn {
+        margin-left: 5%;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+}
+/*800 end*/
+/*----------------------- media query for 800 screen --------------------------*/
+@media only screen and (min-width:864px) and (max-width: 899px) {
+
+    .mainTestdetailRight {
+        padding: 0 13%;
+    }
+
+        .mainTestdetailRight .signupBtn .btn {
+            width: 100% !important;
+        }
+
+    .mainTestDetailsCont .signupBtn .btn {
+        width: 69%;
+    }
+
+    .searchTopBtn {
+        width: 68.5%;
+    }
+}
+/*864 end*/
+@media only screen and (min-width: 900px) and (max-width: 980px) {
+
+    .loginOr {
+        margin: 19% 35px 0 !important;
+    }
+
+    .afterLoginCont form ul li {
+        margin: 0 5%;
+    }
+
+        .afterLoginCont form ul li ul li .btn {
+            width: 230px;
+            font-size: 20px;
+            margin: 0 11%;
+        }
+
+            .afterLoginCont form ul li ul li .btn .font20 {
+                font-size: 14px;
+            }
+
+    .wrongImg {
+        float: none;
+        margin: 0 37px 5px;
+    }
+
+    .QuestionsCont .adv-table tr td .table tr:nth-child(2) td .btn {
+        width: 100%;
+        margin: 10px 0 !important;
+    }
+
+    .QuestionsCont input {
+        margin: 5px auto;
+        width: 50%;
+    }
+
+    .testTakenInner {
+        margin: 0 3% 0 6%;
+        width: 86%;
+    }
+
+    .failedMailInner {
+        margin: 0 3% 20px 6%;
+        width: 86%;
+    }
+
+    .testTaken h2 {
+        margin: 30px 3% 0 6%;
+        width: 86%;
+    }
+
+    .failedMail h2 {
+        margin: 30px 3% 0 6%;
+        width: 86%;
+    }
+
+    .inviteCont .btn {
+        margin-left: 7%;
+    }
+    /*------------add question------------------*/
+    .addQuesTopBar ul li {
+        margin: 5px 10px;
+    }
+
+    .addQuesTopBar .search {
+        width: 200px;
+    }
+
+    .addQuesTopBar ul .btn {
+        font-size: 13px;
+    }
+
+    .addQuesTopBar ul .wid184 {
+        width: 184px;
+    }
+    /*----------add question coding page css---------*/
+    .codePassValue {
+        width: 62%;
+    }
+
+    .codeTestCase {
+        width: 35%;
+    }
+
+    .testCaseBox textarea {
+        width: 160px;
+    }
+
+    .passValueBox textarea {
+        width: 160px;
+    }
+
+    .smallPlanImg {
+        background-size: 100% auto;
+        height: 140px;
+    }
+
+    .mediumPlanImg {
+        background-size: 100% auto;
+        height: 140px;
+    }
+
+    .largePlanImg {
+        background-size: 100% auto;
+        height: 140px;
+    }
+}
+/*900 end*/
+
+@media only screen and (min-width: 980px) and (max-width: 1023px) {
+
+    .wrongImg {
+        float: none;
+        margin: 0 37px 5px;
+    }
+
+    .QuestionsCont .adv-table tr td .table tr:nth-child(2) td .btn {
+        width: 60%;
+        margin: 10px 0 !important;
+    }
+
+    .wrongImg {
+        float: left;
+        margin: 0 -6% 5px 17%;
+    }
+
+    .correctImg {
+        margin: 0 -7% 0 7%;
+    }
+
+    .inviteCont .btn {
+        margin-left: 8%;
+    }
+    /*------------add question------------------*/
+    .addQuesTopBar ul li {
+        margin: 5px 10px;
+    }
+
+    .addQuesTopBar .search {
+        width: 200px;
+    }
+
+    .addQuesTopBar ul .btn {
+        font-size: 13px;
+    }
+
+    .addQuesTopBar ul .wid184 {
+        width: 184px;
+    }
+
+    .mytestCont .bdr-crv .wid71 {
+        width: 69%;
+    }
+
+    .stepsCont ul {
+        display: block;
+        margin: 0 30%;
+    }
+
+    .stepsCont h3 {
+        font-size: 28px;
+    }
+
+    /*------------------referral------------*/
+    #refer .modal-dialog {
+        width: 90%;
+    }
+
+    .howWorkSub ul li {
+        margin: 0 20px;
+    }
+
+    .readyToUseCont h1 {
+        font-size: 32px;
+    }
+
+    .rtuTestBox {
+        width: 29%;
+        margin-left: 3%;
+        padding: 0 5px;
+    }
+
+    .smallPlanImg {
+        background-size: 100% auto;
+        height: 153px;
+    }
+
+    .mediumPlanImg {
+        background-size: 100% auto;
+        height: 153px;
+    }
+
+    .largePlanImg {
+        background-size: 100% auto;
+        height: 153px;
+    }
+
+    .pricePlanBox {
+        margin: 0 1.5% 40px 5.5%;
+    }
+
+    .mytestCont {
+        margin-top: 142px;
+    }
+
+        .mytestCont .nav-tabs.nav-justified > li {
+            width: auto;
+        }
+
+            .mytestCont .nav-tabs.nav-justified > li:nth-child(4) div {
+                width: 290px !important;
+            }
+
+    .searchTopBtn {
+        width: 72%;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+     .addQuesTopBar .form-control {
+        width: 100%;
+    }
+
+    .addQuesTopBar .input-group {
+        width: 60%;
+    }
+
+    .addQuesTopBar .input-group-btn {
+        width: 115px;
+    }
+
+    .addQuesTopBar form {
+        width: 100%;
+        float: left;
+        display: block;
+    }
+
+    .myMainQuestionCont .nav-tabs.nav-justified > li {
+        width: auto;
+    }
+}
+
+
+@media only screen and (min-width:1024px) and (max-width: 1279px) {
+
+    .horizontal-menu .navbar-nav > li > a {
+        padding: 10px 12px;
+    }
+
+    .testLeft {
+        width: 162px;
+    }
+
+    .footerNav {
+        margin: 0 21%;
+        width: 58%;
+    }
+
+    .rtuTestBox {
+        width: 28%;
+        margin-left: 4%;
+    }
+
+    .box1 {
+        padding: 0 10px;
+    }
+
+    .rtu_subTitle {
+        width: 73%;
+    }
+    /*--.rtu_subTitle:before { left: -5.5%;
+}--*/
+    .readyToUseCont h1 {
+        font-size: 31px;
+        padding: 17px 0;
+    }
+
+    .rprtbox {
+        width: 30.5%;
+    }
+
+    .rprtbox2 {
+        width: 30.5%;
+    }
+
+    .rprtbox3 {
+        width: 30.5%;
+    }
+
+    .subrprtBox2 h3 {
+        font-size: 22px;
+    }
+
+    .viewInviteCont .dataTables_filter {
+        width: 28%;
+    }
+
+    .rtuFilter {
+        width: 20%;
+        margin: 37px 3% 17px 0;
+    }
+
+    .loginOr {
+        margin: 20% 7% 0 !important;
+    }
+
+    .afterLoginCont form ul li {
+        margin: 0;
+    }
+
+        .afterLoginCont form ul li ul li .btn {
+            margin: 11% 5% !important;
+        }
+
+        .afterLoginCont form ul li ul li .btn {
+            margin: 0 5%;
+        }
+
+    .headRow {
+        padding: 10px 45px 15px 20px;
+    }
+
+    .QuestionsCont .adv-table tr td .table tr td:first-child {
+        width: 19%;
+    }
+
+        .QuestionsCont .adv-table tr td .table tr td:first-child .floatLeft {
+            float: left;
+        }
+
+    .wrongImg {
+        float: left;
+        margin: 0 -7px 5px 18px;
+    }
+
+    .QuestionsCont input {
+        margin: 5px auto;
+        width: 50%;
+    }
+
+    .QuestionsCont .adv-table tr td .table tr:nth-child(2) td .btn {
+        width: 60%;
+        margin: 10px 0 !important;
+    }
+
+    .wrongImg {
+        float: left;
+        margin: 0 -7% 5px 18%;
+    }
+
+    .correctImg {
+        margin: 0 -12% 0 10%;
+    }
+
+    .searchTopBtn input {
+        width: 380px;
+    }
+
+    .inviteCont .btn {
+        margin-left: 0;
+    }
+
+    /*----------------------add question page css--------*/
+    .passValueBox textarea {
+        width: 200px;
+    }
+
+    .testCaseBox textarea {
+        width: 200px;
+    }
+
+    .mytestCont .bdr-crv .wid71 {
+        width: 69%;
+    }
+
+    .stepsCont ul {
+        display: block;
+        margin: 0 31%;
+    }
+
+    .stepsCont h3 {
+        font-size: 30px;
+    }
+
+    #refer .modal-dialog {
+        width: 90%;
+    }
+
+    .smallPlanImg {
+        background-size: 100% auto;
+        height: 160px;
+    }
+
+    .mediumPlanImg {
+        background-size: 100% auto;
+        height: 160px;
+    }
+
+    .largePlanImg {
+        background-size: 100% auto;
+        height: 160px;
+    }
+
+    .horizontal-menu .navbar-nav > li > a {
+        padding: 6px;
+    }
+
+    .brand {
+        width: 200px;
+    }
+
+    .addQuesTopBar .select2-container .select2-choice {
+        width: 79%;
+    }
+
+    /* Changes 21 Dec 2016 Responsive*/
+    .wrapper {
+        width: 100%;
+    }
+
+    .searchTopBtn {
+        width: 73.5%;
+    }
+
+     .addQuesTopBar .form-control {
+        width: 100%;
+    }
+
+    .addQuesTopBar .input-group {
+        width: 60%;
+    }
+
+    .addQuesTopBar .input-group-btn {
+        width: 115px;
+    }
+
+    .addQuesTopBar form {
+        width: 100%;
+        float: left;
+        display: block;
+    }
+
+    .myMainQuestionCont .nav-tabs.nav-justified > li {
+        width: auto;
+    }
+}
+/*End 1024*/
+
+
+@media only screen and (min-width:1280px) and (max-width: 1365px) {
+
+    .footerNav {
+        margin: 0 28%;
+        width: 44%;
+    }
+
+    .subrprtBox2 h3 {
+        font-size: 24px;
+    }
+
+    .rprtbox {
+        width: 31.2%;
+    }
+
+    .rprtbox2 {
+        width: 31.2%;
+    }
+
+    .rprtbox3 {
+        width: 31.2%;
+    }
+
+    .rtu_subTitle {
+        width: 63%;
+    }
+
+    .rtuTestBox {
+        width: 23%;
+        margin-left: 7.5%;
+    }
+
+    .readyToUseCont h1 {
+        font-size: 38px;
+        text-align: center;
+    }
+
+    .readyToUseCont {
+        width: 99%;
+    }
+    /*--.rtu_subTitle:before { left: -3.9%;
+} --*/
+
+    .afterLoginCont form ul li ul li {
+        margin: 11% 0;
+    }
+
+    .afterLoginCont form ul li {
+        margin: 0 4%;
+    }
+
+        .afterLoginCont form ul li ul li .loginOr {
+            margin: 19% 70px 0 !important;
+        }
+
+    .correctImg {
+        margin: 0 -29px 0 16%;
+    }
+
+    .inviteCont .btn {
+        margin-left: 5%;
+    }
+
+    .testTaken h2 {
+        font-size: 14px;
+    }
+    /*-----------------add question coding page css------*/
+    .codeTestCase {
+        width: 38%;
+    }
+
+    .stepsCont ul {
+        display: block;
+        margin: 0 36%;
+    }
+
+    .stepsCont h3 {
+        font-size: 30px;
+    }
+
+    /*--------------referral css----------------*/
+    #refer .modal-dialog {
+        width: 75%;
+    }
+
+    .smallPlanImg {
+        background-size: 100% auto;
+        height: 160px;
+    }
+
+    .mediumPlanImg {
+        background-size: 100% auto;
+        height: 160px;
+    }
+
+    .largePlanImg {
+        background-size: 100% auto;
+        height: 160px;
+    }
+
+    .pricePlanBox {
+        margin: 0 4% 40px 6%;
+    }
+
+        .pricePlanBox:nth-child(4) {
+            margin: 0 0 40px 5% !important;
+        }
+
+    .searchTopBtn {
+        width: 78%;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+}
+/*1280 end*/
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .afterLoginCont form ul li ul li {
+        margin: 11% 6% 15% 1%;
+    }
+
+    .loginOr {
+        margin: 19% 70px 0;
+    }
+}
+/*----------------------- media query for 1152 screen --------------------------*/
+
+@media only screen and (min-width:1152px) and (max-width: 1279px) {
+
+    .readyToUseCont {
+        width: 99%;
+    }
+    /*Added by gaurav*/
+    .addQuesTopBar .select2-container .select2-choice {
+        width: 89%;
+    }
+}
+/*1152 end*/
+/*----------------------- media query for above 1366 screen --------------------------*/
+
+@media only screen and (min-width:1367px) {
+
+    .mainTestdetailRight {
+        width: 430px !important;
+        float: right;
+    }
+
+    .paymentCont {
+        width: 100%
+    }
+
+    .pricePlanBox {
+        width: 296px;
+        margin: 0 0 15px 13.2%;
+    }
+
+    .paymentCont p {
+        margin: 0 12.5% 0
+    }
+}
+/*1366 end*/

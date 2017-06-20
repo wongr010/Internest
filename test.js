@@ -2,9 +2,12 @@ var bubblearray=[false, false, false, false, false, false];
 var checkarray=[false,false, false, false, false, false, false, false,
 false, false, false, false, false, false, false, false, false, false, false, false,];
 var bubblearray4=[false, false, false, false, false, false, false, false];
+var setupcheck=[false, false, false, false, false, false, false, false, 
+false, false, false, false, false, false, false, false, false, false, 
+false, false, false, false, false, false];
 
 function itemselected(sectionNo, which, index){
-	
+	console.log("entered");
 	if(sectionNo==1 || sectionNo==3){
 
 		 if (sectionNo==1) bubblearray[index]=!bubblearray[index];
@@ -52,10 +55,17 @@ function itemselected(sectionNo, which, index){
 		}
 	}
 
-	if(sectionNo==2){
+	if(sectionNo==2 || sectionNo==4){
+		if (sectionNo==2){
 		checkarray[index]=!checkarray[index];
+		setupcheck[index]=false; //ensure sectionNo 4 is default
+	}
+	else {
+		setupcheck[index]=!setupcheck[index];
+		checkarray[index]=false; //ensure sectionNo 2 is default
+	}
 
-		if(!checkarray[index]){
+		if((sectionNo==2 && !checkarray[index]) || (!setupcheck[index] && sectionNo==4)){
 			if(which=="like"){
 				$(event.target).removeClass("icon-plum-checkbox-selected");
 				$(event.target).addClass("icon-plum-checkbox");
@@ -77,6 +87,8 @@ function itemselected(sectionNo, which, index){
 			$(event.target).addClass("icon-plum-checkbox-notlikeuslcted");
 		}
 	}
+
+	
 
 
 	}
