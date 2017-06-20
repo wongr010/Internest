@@ -248,13 +248,13 @@
                 </form>
                 <assessment-controls cur-form="asc.answers" class="ng-scope"><!-- Navigation Snippet -->
 <div class="mt20 text-center" style="height: 50px">
-    <button class="btn btn-previous mr25 ng-binding" ng-click="prev()" ng-class="{'disabled': loading}">
+    <a href="plum.html" class="btn btn-previous mr25 ng-binding" ng-click="prev()" ng-class="{'disabled': loading}">
       Back
-    </button>
+    </a>
     <div style="position:relative; display:inline;"><span load-spinner="" trigger="false" class="ng-scope"></span></div>
-    <button class="btn btn-next ml25 ng-binding" ng-click="next()" ng-class="{'disabled': !isValid(ans_form, cur_question) || loading}">
+    <a href="plum3.html" class="btn btn-next ml25 ng-binding" ng-click="next()" ng-class="{'disabled': !isValid(ans_form, cur_question) || loading}">
       Next
-    </button>
+    </a>
 </div>
 <!-- <p class="mt20">In Array {{ans_form | json}} </p> --></assessment-controls>
             </div>

@@ -1,6 +1,6 @@
 /*Personalized styling with Internest*/
 
-input {
+.no-display {
     position: absolute;
     z-index: -1;
     opacity: 0;
@@ -15,4 +15,21 @@ input {
 .assessment-btn{
     background-color: #328CC1;
     border-color: #328CC1;
+}
+
+.assessment-list{
+	display: block;
+}
+
+
+.btn-group{
+	position: absolute;
+	left: 0;
+	right: 0;
+	text-align: center;
+	margin: 5%;
+}
+
+.proceed-plum-btn{
+	margin: auto;
 }
