@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Plum</title>
+    <link rel="stylesheet" href = "css/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="icon.css">
+  <link rel="stylesheet" href="plum.css">
+  <link rel="stylesheet" href="test.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="test.js"></script>
+</head>
+<body>
+ <div id="error_messages"></div> 
+
+<!-- USERIQ INPUTS -->
+
+<input id="user_id" type="hidden" value="129296">
+<input id="user_name" type="hidden" value="Ros Wong">
+<input id="account_id" type="hidden" value="972">
+<input id="account_name" type="hidden" value="U of T Hatchery">
+
+<div class="container">
+  <div class="row">
+      
+<input id="ra" type="hidden" value="5910">
+<input id="email" type="hidden" value="rosalyn.wong@uofthatchery.ca">
+<input id="position_id" type="hidden" value="in50SOXsIK">
+
+
+<div ng-app="dsApp" class="ng-scope">
+    <div ng-controller="AssessmentController as asc" class="ng-scope">
+<ra-progress-bar order="7" class="ng-scope"><div class="progress">
+    <div id="act_bar" class="progress-bar progress-bar-ps" style="width: 40%;">
+        <span class="sr-only ng-binding">40% Complete </span>
+    </div>
+    <div id="tra_bar" class="progress-bar progress-bar-fcp" style="width: 35%;">
+        <span class="sr-only ng-binding">35% Complete </span>
+    </div>
+    <div id="dim_bar" class="progress-bar progress-bar-fca" style="width: 25%;">
+        <span class="sr-only ng-binding">25% Complete </span>
+    </div>
+</div>
+
+<table width="100%" cellpadding="0" cellspacing="0" class="text-center">
+    <tbody><tr style="height:5px;border-top:1px solid #eee">
+        <td style="background:#f174a0"></td>
+        <td style="background:#6dcff6"></td>
+        <td style="background:#fbb259"></td>
+    </tr>
+    <tr>
+        <td width="40%" class="text-muted"><h6 style="margin-top:4px;">Activity</h6></td>
+        <td width="35%" class="text-muted"><h6 style="margin-top:4px;">Traits</h6></td>
+        <td width="25%" class="text-muted"><h6 style="margin-top:4px;">Dimensions</h6></td>
+    </tr>
+</tbody></table></ra-progress-bar>
+        <!-- ngIf: cur_question.section_type === 'multiple_choice' --><div ng-if="cur_question.section_type === 'multiple_choice'" class="ng-scope">
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <!-- ngIf: cur_question.section === 5 --><div ng-if="cur_question.section === 5" class="ng-scope">
+                    <p class="text-center">Choose <b>FOUR</b> dimensions that are the <span class="least"><b>Least Important</b></span> to the role and <b>FOUR</b> that are the <span class="most"><b>Most Important</b></span>.</p>
+                </div><!-- end ngIf: cur_question.section === 5 -->
+                <!-- ngIf: cur_question.section === 6 -->
+                <!-- ngIf: cur_question.section === 7 -->
+                <!-- Picker -->
+                <form name="asc.answers" novalidate="" ng-model="ans_form" class="ng-pristine ng-untouched ng-valid ng-not-empty">
+                    <table width="100%" cellpadding="0" cellspacing="0" class="table text-center">
+                        <tbody><!-- ngIf: cur_question.section === 5 --><tr ng-if="cur_question.section === 5" class="ng-scope">
+                            <td width="100"><h5><span class="text-least"><b>Least Important</b></span></h5></td>
+                            <td width="500"></td>
+                            <td width="100"><h5><span class="text-most"><b>Most Important</b></span></h5></td>
+                        </tr><!-- end ngIf: cur_question.section === 5 -->
+                        <!-- ngIf: cur_question.section === 6 -->
+                        <!-- ngIf: cur_question.section === 7 -->
+                        <!-- ngRepeat: statement in cur_question.question.statements --><tr ng-repeat="statement in cur_question.question.statements" class="ng-scope">
+                            <td>
+                                <input type="checkbox" class="no-display ng-scope ng-pristine ng-untouched ng-valid ng-empty" checklist-value="statement.id" unchecked-list="ans_form.mid" checklist-shared="ans_form.most" checklist-max-size="cur_question.question.expect.Least" checked-list-shift="false" id="least-checkbox-274" value="274" ng-model="checked">
+                                <label for="least-checkbox-274">
+                                    <span class="survey-icon icon-plum-checkbox" ng-class="{'icon-plum-checkbox-selected least': checklistChecked(statement.id, ans_form.least), 'icon-plum-checkbox': !checklistChecked(statement.id, ans_form.least)}" onclick="itemselected(4, 'unlike', 0)"></span>
+                                </label>
+                            </td>
+                            <td class="border-bottom-grey"><h5 class="ng-binding">Voices opinions and directions, and enjoys being the center of attention</h5></td>
+                            <td>
+                                <input type="checkbox" class="no-display ng-scope ng-pristine ng-untouched ng-valid ng-empty" checklist-value="statement.id" unchecked-list="ans_form.mid" checklist-shared="ans_form.least" checklist-max-size="cur_question.question.expect.Most" checked-list-shift="false" id="most-checkbox-274" value="274" ng-model="checked">
+                                <label for="most-checkbox-274">
+                                    <span class="survey-icon icon-plum-checkbox" ng-class="{'icon-plum-checkbox-selected most': checklistChecked(statement.id, ans_form.most), 'icon-plum-checkbox': !checklistChecked(statement.id, ans_form.most)}" onclick="itemselected(4, 'like', 1)" ></span>
+                                </label>
+                            </td>
+                        </tr><!-- end ngRepeat: statement in cur_question.question.statements --><tr ng-repeat="statement in cur_question.question.statements" class="ng-scope">
+                            <td>
+                                <input type="checkbox" class="no-display ng-scope ng-pristine ng-untouched ng-valid ng-empty" checklist-value="statement.id" unchecked-list="ans_form.mid" checklist-shared="ans_form.most" checklist-max-size="cur_question.question.expect.Least" checked-list-shift="false" id="least-checkbox-275" value="275" ng-model="checked">
+                                <label for="least-checkbox-275">
+                                    <span class="survey-icon icon-plum-checkbox" ng-class="{'icon-plum-checkbox-selected least': checklistChecked(statement.id, ans_form.least), 'icon-plum-checkbox': !checklistChecked(statement.id, ans_form.least)}" onclick="itemselected(4, 'unlike', 2)"></span>
+                                </label>
+                            </td>
+                            <td class="border-bottom-grey"><h5 class="ng-binding">Empathizes, forgives, and shows warmth to others</h5></td>
+                            <td>
+                                <input type="checkbox" class="no-display ng-scope ng-pristine ng-untouched ng-valid ng-empty" checklist-value="statement.id" unchecked-list="ans_form.mid" checklist-shared="ans_form.least" checklist-max-size="cur_question.question.expect.Most" checked-list-shift="false" id="most-checkbox-275" value="275" ng-model="checked">
+                                <label for="most-checkbox-275">
+                                    <span class="survey-icon icon-plum-checkbox" ng-class="{'icon-plum-checkbox-selected most': checklistChecked(statement.id, ans_form.most), 'icon-plum-checkbox': !checklistChecked(statement.id, ans_form.most)}" onclick="itemselected(4, 'like', 3)"></span>
+                                </label>
+                            </td>
+                        </tr><!-- end ngRepeat: statement in cur_question.question.statements --><tr ng-repeat="statement in cur_question.question.statements" class="ng-scope">
+                            <td>
+                                <input type="checkbox" class="no-display ng-scope ng-pristine ng-untouched ng-valid ng-empty" checklist-value="statement.id" unchecked-list="ans_form.mid" checklist-shared="ans_form.most" checklist-max-size="cur_question.question.expect.Least" checked-list-shift="false" id="least-checkbox-276" value="276" ng-model="checked">
+                                <label for="least-checkbox-276">
+                                    <span class="survey-icon icon-plum-checkbox" ng-class="{'icon-plum-checkbox-selected least': checklistChecked(statement.id, ans_form.least), 'icon-plum-checkbox': !checklistChecked(statement.id, ans_form.least)}" onclick="itemselected(4, 'unlike', 4)"></span>
+                                </label>
+                            </td>
+                            <td class="border-bottom-grey"><h5 class="ng-binding">Cooperates, considerate and is pleasant to others</h5></td>
+                            <td>
+                                <input type="checkbox" class="no-display ng-scope ng-pristine ng-untouched ng-valid ng-empty" checklist-value="statement.id" unchecked-list="ans_form.mid" checklist-shared="ans_form.least" checklist-max-size="cur_question.question.expect.Most" checked-list-shift="false" id="most-checkbox-276" value="276" ng-model="checked">
+                                <label for="most-checkbox-276">
+                                    <span class="survey-icon icon-plum-checkbox" ng-class="{'icon-plum-checkbox-selected most': checklistChecked(statement.id, ans_form.most), 'icon-plum-checkbox': !checklistChecked(statement.id, ans_form.most)}" onclick="itemselected(4, 'like', 5)"></span>
+                                </label>
+                            </td>
+                        </tr><!-- end ngRepeat: statement in cur_question.question.statements --><tr ng-repeat="statement in cur_question.question.statements" class="ng-scope">
+                            <td>
+                                <input type="checkbox" class="no-display ng-scope ng-pristine ng-untouched ng-valid ng-empty" checklist-value="statement.id" unchecked-list="ans_form.mid" checklist-shared="ans_form.most" checklist-max-size="cur_question.question.expect.Least" checked-list-shift="false" id="least-checkbox-277" value="277" ng-model="checked">
+                                <label for="least-checkbox-277">
+                                    <span class="survey-icon icon-plum-checkbox" ng-class="{'icon-plum-checkbox-selected least': checklistChecked(statement.id, ans_form.least), 'icon-plum-checkbox': !checklistChecked(statement.id, ans_form.least)}" onclick="itemselected(4, 'unlike', 6)"></span>
+                                </label>
+                            </td>
+                            <td class="border-bottom-grey"><h5 class="ng-binding">Initiates social interactions</h5></td>
+                            <td>
+                                <input type="checkbox" class="no-display ng-scope ng-pristine ng-untouched ng-valid ng-empty" checklist-value="statement.id" unchecked-list="ans_form.mid" checklist-shared="ans_form.least" checklist-max-size="cur_question.question.expect.Most" checked-list-shift="false" id="most-checkbox-277" value="277" ng-model="checked">
+                                <label for="most-checkbox-277">
+                                    <span class="survey-icon icon-plum-checkbox" ng-class="{'icon-plum-checkbox-selected most': checklistChecked(statement.id, ans_form.most), 'icon-plum-checkbox': !checklistChecked(statement.id, ans_form.most)}" onclick="itemselected(4, 'like', 7)"></span>
+                                </label>
+                            </td>
+                        </tr><!-- end ngRepeat: statement in cur_question.question.statements --><tr ng-repeat="statement in cur_question.question.statements" class="ng-scope">
+                            <td>
+                                <input type="checkbox" class="no-display ng-scope ng-pristine ng-untouched ng-valid ng-empty" checklist-value="statement.id" unchecked-list="ans_form.mid" checklist-shared="ans_form.most" checklist-max-size="cur_question.question.expect.Least" checked-list-shift="false" id="least-checkbox-278" value="278" ng-model="checked">
+                                <label for="least-checkbox-278">
+                                    <span class="survey-icon icon-plum-checkbox" ng-class="{'icon-plum-checkbox-selected least': checklistChecked(statement.id, ans_form.least), 'icon-plum-checkbox': !checklistChecked(statement.id, ans_form.least)}" onclick="itemselected(4, 'unlike', 8)"></span>
+                                </label>
+                            </td>
+                            <td class="border-bottom-grey"><h5 class="ng-binding">Self-assured and optimistic</h5></td>
+                            <td>
+                                <input type="checkbox" class="no-display ng-scope ng-pristine ng-untouched ng-valid ng-empty" checklist-value="statement.id" unchecked-list="ans_form.mid" checklist-shared="ans_form.least" checklist-max-size="cur_question.question.expect.Most" checked-list-shift="false" id="most-checkbox-278" value="278" ng-model="checked">
+                                <label for="most-checkbox-278">
+                                    <span class="survey-icon icon-plum-checkbox" ng-class="{'icon-plum-checkbox-selected most': checklistChecked(statement.id, ans_form.most), 'icon-plum-checkbox': !checklistChecked(statement.id, ans_form.most)}" onclick="itemselected(4, 'like', 9)"></span>
+                                </label>
+                            </td>
+                        </tr><!-- end ngRepeat: statement in cur_question.question.statements --><tr ng-repeat="statement in cur_question.question.statements" class="ng-scope">
+                            <td>
+                                <input type="checkbox" class="no-display ng-scope ng-pristine ng-untouched ng-valid ng-empty" checklist-value="statement.id" unchecked-list="ans_form.mid" checklist-shared="ans_form.most" checklist-max-size="cur_question.question.expect.Least" checked-list-shift="false" id="least-checkbox-279" value="279" ng-model="checked">
+                                <label for="least-checkbox-279">
+                                    <span class="survey-icon icon-plum-checkbox" ng-class="{'icon-plum-checkbox-selected least': checklistChecked(statement.id, ans_form.least), 'icon-plum-checkbox': !checklistChecked(statement.id, ans_form.least)}" onclick="itemselected(4, 'unlike', 10)"></span>
+                                </label>
+                            </td>
+                            <td class="border-bottom-grey"><h5 class="ng-binding">Observes and takes note of what could be improved in the future</h5></td>
+                            <td>
+                                <input type="checkbox" class="no-display ng-scope ng-pristine ng-untouched ng-valid ng-empty" checklist-value="statement.id" unchecked-list="ans_form.mid" checklist-shared="ans_form.least" checklist-max-size="cur_question.question.expect.Most" checked-list-shift="false" id="most-checkbox-279" value="279" ng-model="checked">
+                                <label for="most-checkbox-279">
+                                    <span class="survey-icon icon-plum-checkbox" ng-class="{'icon-plum-checkbox-selected most': checklistChecked(statement.id, ans_form.most), 'icon-plum-checkbox': !checklistChecked(statement.id, ans_form.most)}" onclick="itemselected(4, 'like', 11)"></span>
+                                </label>
+                            </td>
+                        </tr><!-- end ngRepeat: statement in cur_question.question.statements --><tr ng-repeat="statement in cur_question.question.statements" class="ng-scope">
+                            <td>
+                                <input type="checkbox" class="no-display ng-scope ng-pristine ng-untouched ng-valid ng-empty" checklist-value="statement.id" unchecked-list="ans_form.mid" checklist-shared="ans_form.most" checklist-max-size="cur_question.question.expect.Least" checked-list-shift="false" id="least-checkbox-280" value="280" ng-model="checked">
+                                <label for="least-checkbox-280">
+                                    <span class="survey-icon icon-plum-checkbox" ng-class="{'icon-plum-checkbox-selected least': checklistChecked(statement.id, ans_form.least), 'icon-plum-checkbox': !checklistChecked(statement.id, ans_form.least)}" onclick="itemselected(4, 'unlike', 12)"></span>
+                                </label>
+                            </td>
+                            <td class="border-bottom-grey"><h5 class="ng-binding">Looks for unconventional and innovative solutions</h5></td>
+                            <td>
+                                <input type="checkbox" class="no-display ng-scope ng-pristine ng-untouched ng-valid ng-empty" checklist-value="statement.id" unchecked-list="ans_form.mid" checklist-shared="ans_form.least" checklist-max-size="cur_question.question.expect.Most" checked-list-shift="false" id="most-checkbox-280" value="280" ng-model="checked">
+                                <label for="most-checkbox-280">
+                                    <span class="survey-icon icon-plum-checkbox" ng-class="{'icon-plum-checkbox-selected most': checklistChecked(statement.id, ans_form.most), 'icon-plum-checkbox': !checklistChecked(statement.id, ans_form.most)}" onclick="itemselected(4, 'like', 13)"></span>
+                                </label>
+                            </td>
+                        </tr><!-- end ngRepeat: statement in cur_question.question.statements --><tr ng-repeat="statement in cur_question.question.statements" class="ng-scope">
+                            <td>
+                                <input type="checkbox" class="no-display ng-scope ng-pristine ng-untouched ng-valid ng-empty" checklist-value="statement.id" unchecked-list="ans_form.mid" checklist-shared="ans_form.most" checklist-max-size="cur_question.question.expect.Least" checked-list-shift="false" id="least-checkbox-281" value="281" ng-model="checked">
+                                <label for="least-checkbox-281">
+                                    <span class="survey-icon icon-plum-checkbox" ng-class="{'icon-plum-checkbox-selected least': checklistChecked(statement.id, ans_form.least), 'icon-plum-checkbox': !checklistChecked(statement.id, ans_form.least)}" onclick="itemselected(4, 'unlike', 14)"></span>
+                                </label>
+                            </td>
+                            <td class="border-bottom-grey"><h5 class="ng-binding">Seeks to include and encourage those that are less keen on participating</h5></td>
+                            <td>
+                                <input type="checkbox" class="no-display ng-scope ng-pristine ng-untouched ng-valid ng-empty" checklist-value="statement.id" unchecked-list="ans_form.mid" checklist-shared="ans_form.least" checklist-max-size="cur_question.question.expect.Most" checked-list-shift="false" id="most-checkbox-281" value="281" ng-model="checked">
+                                <label for="most-checkbox-281">
+                                    <span class="survey-icon icon-plum-checkbox" ng-class="{'icon-plum-checkbox-selected most': checklistChecked(statement.id, ans_form.most), 'icon-plum-checkbox': !checklistChecked(statement.id, ans_form.most)}" onclick="itemselected(4, 'like', 15)"></span>
+                                </label>
+                            </td>
+                        </tr><!-- end ngRepeat: statement in cur_question.question.statements --><tr ng-repeat="statement in cur_question.question.statements" class="ng-scope">
+                            <td>
+                                <input type="checkbox" class="no-display ng-scope ng-pristine ng-untouched ng-valid ng-empty" checklist-value="statement.id" unchecked-list="ans_form.mid" checklist-shared="ans_form.most" checklist-max-size="cur_question.question.expect.Least" checked-list-shift="false" id="least-checkbox-282" value="282" ng-model="checked">
+                                <label for="least-checkbox-282">
+                                    <span class="survey-icon icon-plum-checkbox" ng-class="{'icon-plum-checkbox-selected least': checklistChecked(statement.id, ans_form.least), 'icon-plum-checkbox': !checklistChecked(statement.id, ans_form.least)}" onclick="itemselected(4, 'unlike', 16)"></span>
+                                </label>
+                            </td>
+                            <td class="border-bottom-grey"><h5 class="ng-binding">Aspires to challenging goals, puts in extra effort and retains high standards</h5></td>
+                            <td>
+                                <input type="checkbox" class="no-display ng-scope ng-pristine ng-untouched ng-valid ng-empty" checklist-value="statement.id" unchecked-list="ans_form.mid" checklist-shared="ans_form.least" checklist-max-size="cur_question.question.expect.Most" checked-list-shift="false" id="most-checkbox-282" value="282" ng-model="checked">
+                                <label for="most-checkbox-282">
+                                    <span class="survey-icon icon-plum-checkbox" ng-class="{'icon-plum-checkbox-selected most': checklistChecked(statement.id, ans_form.most), 'icon-plum-checkbox': !checklistChecked(statement.id, ans_form.most)}" onclick="itemselected(4, 'like', 17)"></span>
+                                </label>
+                            </td>
+                        </tr><!-- end ngRepeat: statement in cur_question.question.statements --><tr ng-repeat="statement in cur_question.question.statements" class="ng-scope">
+                            <td>
+                                <input type="checkbox" class="no-display ng-scope ng-pristine ng-untouched ng-valid ng-empty" checklist-value="statement.id" unchecked-list="ans_form.mid" checklist-shared="ans_form.most" checklist-max-size="cur_question.question.expect.Least" checked-list-shift="false" id="least-checkbox-283" value="283" ng-model="checked">
+                                <label for="least-checkbox-283">
+                                    <span class="survey-icon icon-plum-checkbox" ng-class="{'icon-plum-checkbox-selected least': checklistChecked(statement.id, ans_form.least), 'icon-plum-checkbox': !checklistChecked(statement.id, ans_form.least)}" onclick="itemselected(4, 'unlike', 18)"></span>
+                                </label>
+                            </td>
+                            <td class="border-bottom-grey"><h5 class="ng-binding">Competitive and seeking to overtake competitors and go beyond expectations</h5></td>
+                            <td>
+                                <input type="checkbox" class="no-display ng-scope ng-pristine ng-untouched ng-valid ng-empty" checklist-value="statement.id" unchecked-list="ans_form.mid" checklist-shared="ans_form.least" checklist-max-size="cur_question.question.expect.Most" checked-list-shift="false" id="most-checkbox-283" value="283" ng-model="checked">
+                                <label for="most-checkbox-283">
+                                    <span class="survey-icon icon-plum-checkbox" ng-class="{'icon-plum-checkbox-selected most': checklistChecked(statement.id, ans_form.most), 'icon-plum-checkbox': !checklistChecked(statement.id, ans_form.most)}"onclick="itemselected(4, 'like', 19)"></span>
+                                </label>
+                            </td>
+                        </tr><!-- end ngRepeat: statement in cur_question.question.statements --><tr ng-repeat="statement in cur_question.question.statements" class="ng-scope">
+                            <td>
+                                <input type="checkbox" class="no-display ng-scope ng-pristine ng-untouched ng-valid ng-empty" checklist-value="statement.id" unchecked-list="ans_form.mid" checklist-shared="ans_form.most" checklist-max-size="cur_question.question.expect.Least" checked-list-shift="false" id="least-checkbox-284" value="284" ng-model="checked">
+                                <label for="least-checkbox-284">
+                                    <span class="survey-icon icon-plum-checkbox" ng-class="{'icon-plum-checkbox-selected least': checklistChecked(statement.id, ans_form.least), 'icon-plum-checkbox': !checklistChecked(statement.id, ans_form.least)}"onclick="itemselected(4, 'unlike', 20)"></span>
+                                </label>
+                            </td>
+                            <td class="border-bottom-grey"><h5 class="ng-binding">Learns new things, curious and imaginative</h5></td>
+                            <td>
+                                <input type="checkbox" class="no-display ng-scope ng-pristine ng-untouched ng-valid ng-empty" checklist-value="statement.id" unchecked-list="ans_form.mid" checklist-shared="ans_form.least" checklist-max-size="cur_question.question.expect.Most" checked-list-shift="false" id="most-checkbox-284" value="284" ng-model="checked">
+                                <label for="most-checkbox-284">
+                                    <span class="survey-icon icon-plum-checkbox" ng-class="{'icon-plum-checkbox-selected most': checklistChecked(statement.id, ans_form.most), 'icon-plum-checkbox': !checklistChecked(statement.id, ans_form.most)}"onclick="itemselected(4,'like', 21)"></span>
+                                </label>
+                            </td>
+                        </tr><!-- end ngRepeat: statement in cur_question.question.statements --><tr ng-repeat="statement in cur_question.question.statements" class="ng-scope">
+                            <td>
+                                <input type="checkbox" class="no-display ng-scope ng-pristine ng-untouched ng-valid ng-empty" checklist-value="statement.id" unchecked-list="ans_form.mid" checklist-shared="ans_form.most" checklist-max-size="cur_question.question.expect.Least" checked-list-shift="false" id="least-checkbox-285" value="285" ng-model="checked">
+                                <label for="least-checkbox-285">
+                                    <span class="survey-icon icon-plum-checkbox" ng-class="{'icon-plum-checkbox-selected least': checklistChecked(statement.id, ans_form.least), 'icon-plum-checkbox': !checklistChecked(statement.id, ans_form.least)}"onclick="itemselected(4, 'unlike', 22)"></span>
+                                </label>
+                            </td>
+                            <td class="border-bottom-grey"><h5 class="ng-binding">Calm and collected and performs under intense pressure</h5></td>
+                            <td>
+                                <input type="checkbox" class="no-display ng-scope ng-pristine ng-untouched ng-valid ng-empty" checklist-value="statement.id" unchecked-list="ans_form.mid" checklist-shared="ans_form.least" checklist-max-size="cur_question.question.expect.Most" checked-list-shift="false" id="most-checkbox-285" value="285" ng-model="checked">
+                                <label for="most-checkbox-285">
+                                    <span class="survey-icon icon-plum-checkbox" ng-class="{'icon-plum-checkbox-selected most': checklistChecked(statement.id, ans_form.most), 'icon-plum-checkbox': !checklistChecked(statement.id, ans_form.most)}" onclick="itemselected(4, 'like', 23)"></span>
+                                </label>
+                            </td>
+                        </tr><!-- end ngRepeat: statement in cur_question.question.statements -->
+                    </tbody></table>
+                </form>
+                <assessment-controls cur-form="asc.answers" class="ng-scope"><!-- Navigation Snippet -->
+<div class="mt20 text-center" style="height: 50px">
+    <button class="btn btn-previous mr25 ng-binding" ng-click="prev()" ng-class="{'disabled': loading}">
+      Back
+    </button>
+    <div style="position:relative; display:inline;"><span load-spinner="" trigger="false" class="ng-scope"></span></div>
+    <button class="btn btn-next ml25 ng-binding" ng-click="next()" ng-class="{'disabled': !isValid(ans_form, cur_question) || loading}">
+      Next
+    </button>
+</div>
+<!-- <p class="mt20">In Array {{ans_form | json}} </p> --></assessment-controls>
+            </div>
+        </div><!-- end ngIf: cur_question.section_type === 'multiple_choice' -->
+</div>
+
+<div class="clearfix"></div>
+<div class="col-sm-12 text-center">
+    <p class="small text-muted mt35">© Copyright 2016 Plum - All rights reserved. Having issues? Contact <a href="mailto:support@plum.io" data-uv-trigger="" data-uv-scanned="true" id="uv-1">support@plum.io</a></p>
+</div>
+
+  </div><!--End Row-->
+</div><!-- End Container-->
+
+
+<script type="text/javascript" src="https://plum-application.s3.amazonaws.com/static/js/tp-utilities.js?v=2.4"></script>
+
+<script src="//use.typekit.net/sgl5gqh.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window,document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+   fbq('init', '233347413784087');
+  fbq('track', 'PageView');
+</script>
+<noscript>
+ &lt;img height="1" width="1" src="https://www.facebook.com/tr?id=233347413784087&amp;ev=PageView &amp;noscript=1"/&gt;
+</noscript>
+<!-- End Facebook Pixel Code -->
+
+
+</div><div data-html2canvas-ignore="true" class="uv-icon uv-bottom-left"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="39px" height="39px" viewBox="0 0 39 39" enable-background="new 0 0 39 39" xml:space="preserve">
+<g>
+    <path class="uv-bubble-background" fill="rgba(46, 49, 51, 0.6)" d="M31.425,34.514c-0.432-0.944-0.579-2.007-0.591-2.999c4.264-3.133,7.008-7.969,7.008-13.409
+        C37.842,8.658,29.594,1,19.421,1S1,8.658,1,18.105c0,9.446,7.932,16.79,18.105,16.79c1.845,0,3.94,0.057,5.62-0.412
+        c0.979,1.023,2.243,2.3,2.915,2.791c3.785,2.759,7.571,0,7.571,0S32.687,37.274,31.425,34.514z" style="fill: rgba(46, 49, 51, 0.6);"></path>
+    <g>
+        <g>
+            <path class="uv-bubble-foreground" fill="#FFFFFF" d="M16.943,19.467c0-3.557,4.432-3.978,4.432-6.058c0-0.935-0.723-1.721-2.383-1.721
+                c-1.508,0-2.773,0.725-3.709,1.87l-2.441-2.743c1.598-1.9,4.01-2.924,6.602-2.924c3.891,0,6.271,1.959,6.271,4.765
+                c0,4.4-5.037,4.732-5.037,7.265c0,0.481,0.243,0.994,0.574,1.266l-3.316,0.965C17.303,21.459,16.943,20.522,16.943,19.467z
+                 M16.943,26.19c0-1.326,1.114-2.441,2.44-2.441c1.327,0,2.442,1.115,2.442,2.441c0,1.327-1.115,2.441-2.442,2.441
+                C18.058,28.632,16.943,27.518,16.943,26.19z" style="fill: white;"></path>
+        </g>
+    </g>
+</g>
+</svg>
+</div></body>
+</html>
