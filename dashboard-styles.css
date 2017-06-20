@@ -126,7 +126,7 @@ td{
     		width: 100%;
     	}
 
-    	.nav-style{
+    	/*.nav-style{
     		display: flex;
     	}
 
@@ -137,5 +137,5 @@ td{
 
 		.nav-style li a{
 			flex: 1;
-		}
+		}*/
     }

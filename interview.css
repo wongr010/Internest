@@ -85,7 +85,7 @@ header{
     		width: 100%;
     	}
 
-    	.nav-style{
+    	/*.nav-style{
     		display: flex;
     	}
 
@@ -96,7 +96,7 @@ header{
 
 		.nav-style li a{
 			flex: 1;
-		}
+		}*/
 
 
     }

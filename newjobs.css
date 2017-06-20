@@ -88,7 +88,7 @@ input[type=title]{
     		padding: auto;
     	}
 
-    	.nav-style{
+    	/*.nav-style{
     		display: flex;
     	}
 
@@ -99,5 +99,5 @@ input[type=title]{
 
 		.nav-style li a{
 			flex: 1;
-		}
+		}*/
     }

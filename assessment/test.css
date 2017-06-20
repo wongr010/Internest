@@ -15,6 +15,7 @@
 .assessment-btn{
     background-color: #328CC1;
     border-color: #328CC1;
+    
 }
 
 .assessment-list{
@@ -32,4 +33,9 @@
 
 .proceed-plum-btn{
 	margin: auto;
+}
+
+.finish-assessment-btns{
+	text-align: center;
+	margin: 5%;
 }
