@@ -6,6 +6,10 @@ var setupcheck=[false, false, false, false, false, false, false, false,
 false, false, false, false, false, false, false, false, false, false, 
 false, false, false, false, false, false];
 
+var newrevision;
+
+
+
 function itemselected(sectionNo, which, index){
 	console.log("entered");
 	if(sectionNo==1 || sectionNo==3){
@@ -95,6 +99,18 @@ function itemselected(sectionNo, which, index){
 
 function warning(){
 	confirm("You will not be able to change your answer after you submit.");
+}
+
+function newrevision(){
+		if (!newrevision){
+
+		 newrevision=true;
+		 return;
+		}
+		else{
+			$("#hidden").removeClass("hidden");
+			newrevision=false;
+		}
 }
 
 
