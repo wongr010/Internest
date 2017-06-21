@@ -1,0 +1,97 @@
+/*
+Profile Styles 
+Created by: Matt James
+Last Updated: 7-10-15
+*/
+body{background:#ebecf0}
+.navbar-white{height:83px;background:#fff;color:#444;margin-top:0px;line-height:18px;border-bottom:solid 1px #e2e3e8;}
+.hs-cta-wrapper, .cta{margin-top:8px;}
+a{color:#0070D2}
+a:hover{color:#003E76}
+.alert-message{border:1px solid #e2e9ee;background:#ffffff;color:#444444;}
+.banner{margin-top:-19px;}p{font-size:.9em;text-align:justify}.beta{margin-left:-272px;margin-top:-33px;z-index:999;}
+.well-info-box{border-top:12px solid #821e70;border-right:1px solid #dddddd;border-left:1px solid #dddddd;border-bottom:1px solid #dddddd;margin:12px 0;border-radius:6px;box-shadow:0 1px 4px rgba(21, 21, 21, 0.2)}
+.well-info-box .header{display:block;background: #ede3e8;margin:0;padding:8px 12px}
+.well-info-box .freemium-header{display:block;background:#e2f4fd;padding:8px 12px}
+.well-info-box .header h4, h5{padding:0;margin:0 0 4px 0;vertical-align:middle;}
+.well-info-box .header p{padding:0;margin:0; color:#777777;text-align:left;}
+.well-info-box .body{padding:8px 16px;background:#ffffff;}
+.freemium{border-top:12px solid #30c4f2;}
+.text-freemium{color:#30c4f2;}
+hr {margin:8px 0 4px 0;}
+.btn-upgrade{background:#fcb040;color:#ffffff;padding:10px 14px;font-size:1.1em;margin-left:10px;}.btn-upgrade:hover{background:#fd9700;color:#ffffff;}
+ol{margin: 0 0 5px;padding: 0;counter-reset: item;}
+ol > li {margin: 0;padding: 0 0 0.65em 2em;text-indent: -1.2em;list-style-type: none;counter-increment: item;}
+ol > li:before {display: inline-block;width: 1em;padding-right: 0.5em;font-weight: bold;font-size:1.4em;color:#821e70;text-align:right;content: counter(item) "";}
+.icon-list li {
+  padding: 0 0 10px 20px;
+  display: block;
+  position: relative;
+  font-size:12px;
+  line-height:1.66em;
+}
+.icon-list li:before {
+  font-family: 'Glyphicons Regular';
+  position: absolute;
+  left: 0;
+  top:0;
+  font-size:80%;
+  color:#bbb;
+}
+.chevron-right li:before {
+ content: '\E224';
+}
+.icon-lock{margin:0 4px;vertical-align:baseline;}
+.cmn-toggle {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+}
+.cmn-toggle + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+}
+input.cmn-toggle-round + label {
+  padding: 1px;
+  width: 45px;
+  height: 25px;
+  background-color: #dddddd;
+  border-radius: 40px;
+}
+input.cmn-toggle-round + label:before,
+input.cmn-toggle-round + label:after {
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  content: "";
+}
+input.cmn-toggle-round + label:before {
+  right: 1px;
+  background-color: #d1d1d1;
+  border-radius: 60px;
+  transition: background 0.4s;
+}
+input.cmn-toggle-round + label:after {
+  width: 22px;
+  height:22px;
+  background-color: #ffffff;
+  border-radius: 100%;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  transition: margin 0.4s;
+}
+input.cmn-toggle-round:checked + label:before {
+  background-color: #821e70;
+}
+input.cmn-toggle-round:checked + label:after {
+  margin-left: 20px;}
+.mr8{margin-right:8px;}
+@media (max-width: 640px) {
+  .no-text {
+    display: none;
+  }
+}
