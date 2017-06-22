@@ -1,0 +1,24 @@
+{
+  "name": "internest",
+  "version": "1.0.0",
+  "description": "internest on the local host",
+  "main": "express.js",
+  "scripts": {
+    "test": "node express.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wongr010/Internest.git"
+  },
+  "keywords": [
+    "internest",
+    "intern",
+    "uoft"
+  ],
+  "author": "Rosalyn Wong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wongr010/Internest/issues"
+  },
+  "homepage": "https://github.com/wongr010/Internest#readme"
+}
