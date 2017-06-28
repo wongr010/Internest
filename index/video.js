@@ -1,6 +1,7 @@
 var video = document.querySelector("#videoElement");
 var record=document.querySelector('.record');
 var stop=document.querySelector('.stop'); 
+var download=document.querySelector('.download');
 
 var playvideo=document.querySelector("#playElement");
 
@@ -95,6 +96,22 @@ function playrecord(){
     playvideo.src=window.URL.createObjectURL(superBuffer);
 }
 
+
+function downloadrecord(){
+    var blob=new Blob(recordedBlobs, {type: 'video/MP4'});
+     var url = window.URL.createObjectURL(blob);
+  var a = document.createElement('a');
+  a.style.display = 'none';
+  a.href = url;
+  a.download = 'test.mp4';
+  document.body.appendChild(a);
+  a.click();
+  setTimeout(function() {
+    document.body.removeChild(a);
+    window.URL.revokeObjectURL(url);
+  }, 100);
+
+}
 
 
 
